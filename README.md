@@ -1,10 +1,10 @@
-# Ivan's Personal Website and Portfolio
+## Ivan's Personal Website and Portfolio
 
-## Technologies used
+### Technologies used
 - Hexo (static site generator)
 
-## License
+### License
 MIT
 
-## Credits 
+### Credits
 - Me
