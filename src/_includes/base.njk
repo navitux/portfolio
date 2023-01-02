@@ -7,8 +7,12 @@
  <meta name="viewport" content="width=device-width, initial-scale=1.0">
  <link rel="icon" href="/img/icons8-humanoid-96.png">
  <link rel="stylesheet" href="/static/tachyons.min.css">
- <link rel="stylesheet" href="/static/holiday.0.9.css" />
+ <link rel="stylesheet" href="/static/simple.min.css">
  <link rel="stylesheet" href="/static/image-loader.css">
+ <link rel="stylesheet" href="/static/animate.min.css">
+ <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+ <link rel="stylesheet" href="/static/aos.css">
+ <script src="/static/aos.js"></script>
  <script src="/static/whlp/script.js"></script>
  <link rel="stylesheet" href="/static/whlp/style.css">
  <!-- SEO -->
@@ -27,16 +31,22 @@
  <meta property="og:type" content="website">
  <title>{{ title }}</title>
  <style>
+  .nava {
+  color: white !important;
+  }
   .nava:hover{
   background-color: white;
-  color: black;
+  color: black !important;
   }
  </style>
+ <script>
+  AOS.init();
+</script>
 </head>
 <body>
-  <header style="position: sticky;">
-    <nav class="pa3 pa4-ns" style="background-image:url(/img/loopinspace.gif);">
-      <a class="nava link dim black b f6 f5-ns dib mr3" href="/" title="Home">Home</a>
+  <header style="background-image:url(/img/loopinspace.gif);">
+    <nav class="pa3 pa4-ns">
+      <a class="nava link dim black b f6 f5-ns dib mr3" href="/" title="Home">Ivan Site</a>
       <a class="nava link dim gray    f6 f5-ns dib mr3" href="#" title="About">About</a>
       <a class="nava link dim gray    f6 f5-ns dib mr3" href="#" title="Posts">Posts</a>
       <a class="nava link dim gray    f6 f5-ns dib mr3" href="#" title="Projects">Projects</a>
@@ -44,24 +54,16 @@
     </nav>
   </header>
   <main>
-    <h1> &#x1F62C; Ivan Site &#x1F916; </h1>
-    <p>Please, feel free to check my most recent posts or my projects above</p>
-
-    <article>
-      <picture>
-        <img src="https://random.imagecdn.app/500/150">
-        <br>
-        <caption><small>random image</small></caption>
-      </picture>
-    </article>
-
-    <h3>Blog</h3>
     {{ content | safe }}
-    <h3>What's on Mastodon ?</h3>
-    <iframe allowfullscreen sandbox="allow-top-navigation allow-scripts" width="200" height="700" src="https://www.mastofeed.com/apiv2/feed?userurl=https%3A%2F%2Fmasto.nobigtech.es%2Fusers%2Fnavitux&theme=dark&size=100&header=true&replies=false&boosts=true"></iframe>
   </main>
   <footer>
     <small>CC BY 4.0 - Ivan Robles </small>
+    <br>
+    <picture>
+      <img src="https://random.imagecdn.app/500/150">
+      <br>
+      <caption><small>(random image)</small></caption>
+    </picture>
   </footer>
   <script src="/static/whlp/foot.js"></script>
 </body>

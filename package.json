@@ -33,6 +33,8 @@
   },
   "dependencies": {
     "@11ty/eleventy-plugin-directory-output": "^1.0.1",
+    "animate.css": "^4.1.1",
+    "aos": "^2.3.4",
     "frontend-dependencies": "^2.0.0",
     "tachyons": "^4.12.0"
   },
@@ -40,8 +42,16 @@
     "target": "src/static/",
     "packages": {
       "tachyons": {
-          "version": "^4.12.0",
-          "src": "css/tachyons.min.css"
+        "version": "^4.12.0",
+        "src": "css/tachyons.min.css"
+      },
+      "animate.css": {
+        "version": "^4.1.1",
+        "src": "animate.min.css"
+      },
+      "aos": {
+        "version": "^2.3.4",
+        "src": "dist/*"
       }
     }
   }

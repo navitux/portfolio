@@ -6,7 +6,7 @@ Technologies used
 - [Eleventy](https://www.11ty.dev/) ( [github repo](https://github.com/11ty/eleventy/) )
 
 ### Front-End tech
-- [holiday.css](https://holidaycss.js.org/)
+- [simple.css](https://simplecss.org/) as base style
 - [tachyons](https://tachyons.io/)
 
 Licenses
