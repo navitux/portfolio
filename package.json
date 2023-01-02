@@ -1,0 +1,30 @@
+{
+  "name": "navitux.github.io",
+  "version": "1.0.0",
+  "description": "Ivan's personal web site and portfolio",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/navitux/navitux.github.io.git"
+  },
+  "keywords": [
+    "blog",
+    "personal",
+    "website",
+    "static",
+    "portfolio",
+    "Ivan"
+  ],
+  "author": "Ivan Robles",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/navitux/navitux.github.io/issues"
+  },
+  "homepage": "https://github.com/navitux/navitux.github.io#readme",
+  "devDependencies": {
+    "@11ty/eleventy": "^1.0.2"
+  }
+}

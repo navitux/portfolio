@@ -3,7 +3,7 @@ Ivan's Personal Website and Portfolio
 
 Technologies used
 -----------------
-- Hexo (static site generator)
+- [Eleventy](https://github.com/11ty/eleventy/) (static site generator)
 
 Licenses
 --------
