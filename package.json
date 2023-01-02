@@ -31,6 +31,7 @@
     "@sherby/eleventy-plugin-files-minifier": "^1.1.1"
   },
   "dependencies": {
-    "@11ty/eleventy-plugin-directory-output": "^1.0.1"
+    "@11ty/eleventy-plugin-directory-output": "^1.0.1",
+    "tachyons": "^4.12.0"
   }
 }

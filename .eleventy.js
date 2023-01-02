@@ -6,6 +6,7 @@ module.exports = (eleventyConfig) => {
   eleventyConfig.addPassthroughCopy("./src/img");
   eleventyConfig.addPassthroughCopy("./src/static");
   eleventyConfig.addWatchTarget("./src/static/");
+  eleventyConfig.addPassthroughCopy({"/node_modules/tachyons/css/tachyons.min.css": "static/tachyons.css"});
   // output directory
   eleventyConfig.addPlugin(directoryOutputPlugin, {
     columns: {
