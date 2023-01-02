@@ -1,6 +1,6 @@
 ---
-title: Ivan's Website & Portfolio 
-layout: "base.njk"
+title: Ivan Site 
+layout: base.njk
 ---
 
 I'm Ivan and this is my blog
