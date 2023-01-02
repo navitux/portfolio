@@ -1,10 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+ <!-- functional stuff -->
  <meta charset="UTF-8">
  <meta http-equiv="X-UA-Compatible" content="IE=edge">
  <meta name="viewport" content="width=device-width, initial-scale=1.0">
  <link rel="icon" href="img/icons8-humanoid-96.png">
+ <link rel="stylesheet" href="static/holiday.0.9.css" />
+ <link rel="stylesheet" href="static/image-loader.css">
+ <script src="static/whlp/script.js"></script>
+ <link rel="stylesheet" href="static/whlp/style.css">
+ <!-- SEO -->
+ <meta name="title" content="Ivan's Website & Portfolio">
+ <meta name="description" content="Ivan Robles' personal website and portfolio">
+ <meta name="keywords" content="portfolio,site,ivan,robles,navitux,blog">
+ <meta name="robots" content="index, follow">
+ <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+ <meta name="language" content="English">
+ <meta name="revisit-after" content="1 days">
+ <meta name="author" content="Ivan Robles">
+ <meta property="og:title" content="Ivan's Website & Portfolio">
+ <meta property="og:site_name" content="Ivan Site">
+ <meta property="og:url" content="https://navitux.github.io">
+ <meta property="og:description" content="Ivan Robles' personal website and portfolio">
+ <meta property="og:type" content="website">
  <title>{{ title }}</title>
 </head>
 <body>
@@ -13,6 +32,13 @@
   </header>
   <main>
     {{ content | safe }}
+    <h2>What's on Mastodon ?</h2>
+    <iframe allowfullscreen sandbox="allow-top-navigation allow-scripts" width="400" height="800"
+      src="https://www.mastofeed.com/apiv2/feed?userurl=https%3A%2F%2Fmasto.nobigtech.es%2Fusers%2Fnavitux&theme=dark&size=100&header=true&replies=false&boosts=true"></iframe>
   </main>
+  <footer>
+    <small>CC BY 4.0 - Ivan Robles </small>
+  </footer>
+  <script src="static/whlp/foot.js"></script>
 </body>
 </html>

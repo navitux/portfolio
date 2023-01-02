@@ -2,9 +2,8 @@
   "name": "navitux.github.io",
   "version": "1.0.0",
   "description": "Ivan's personal web site and portfolio",
-  
   "scripts": {
-    "serve":"npx @11ty/eleventy --serve",
+    "serve": "rm -rf dist/; npx @11ty/eleventy --serve",
     "test": "npx @11ty/eleventy --dryrun"
   },
   "repository": {
@@ -27,5 +26,8 @@
   "homepage": "https://github.com/navitux/navitux.github.io#readme",
   "devDependencies": {
     "@11ty/eleventy": "^1.0.2"
+  },
+  "dependencies": {
+    "@11ty/eleventy-plugin-directory-output": "^1.0.1"
   }
 }
