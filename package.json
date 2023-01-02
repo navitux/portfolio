@@ -2,9 +2,9 @@
   "name": "navitux.github.io",
   "version": "1.0.0",
   "description": "Ivan's personal web site and portfolio",
-  "main": "index.js",
+  
   "scripts": {
-  	"run":"npx @11ty/eleventy --serve",
+    "serve":"npx @11ty/eleventy --serve",
     "test": "npx @11ty/eleventy --dryrun"
   },
   "repository": {
