@@ -6,7 +6,7 @@
     "serve": "rm -rf dist/; npx @11ty/eleventy --serve",
     "test": "npx @11ty/eleventy --dryrun",
     "build": "rm -rf dist/; npx @11ty/eleventy;",
-    "github":"rm -rf dist/; npx @11ty/eleventy; cp -R dist/img . ; cp -r dist/posts . ; cp -r dist/static . ; cp dist/index.html ."
+    "github":"rm -rf dist/; npx @11ty/eleventy; cp -R dist/img . ; cp -r dist/blog . ; cp -r dist/static . ; cp dist/index.html ."
   },
   "repository": {
     "type": "git",
