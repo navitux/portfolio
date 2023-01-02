@@ -1,0 +1,1 @@
+document.querySelectorAll('webhighlights-link-preview').forEach(element => element.addEventListener('click', () => location.href = element.getAttribute('url')))

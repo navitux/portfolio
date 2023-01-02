@@ -1,0 +1,18 @@
+webhighlights-link-preview {
+    display: flex;
+    width: 500px;
+    margin-top: 10px;
+}
+
+
+@media (min-width: 600px) {
+    webhighlights-link-preview {
+        margin: 10px 100px;
+        border-radius: 10px;
+    }
+}
+
+webhighlights-link-preview:hover {
+    background: rgb(245, 248, 250);
+    border-color: #8899a680;
+}
