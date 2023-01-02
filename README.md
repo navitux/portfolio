@@ -1,10 +1,17 @@
-## Ivan's Personal Website and Portfolio
+Ivan's Personal Website and Portfolio
+-------------------------------------
 
-### Technologies used
+Technologies used
+-----------------
 - Hexo (static site generator)
 
-### License
-MIT
+Licenses
+--------
+Code: MIT
 
-### Credits
-- Me
+Art: [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)
+
+
+Credits
+-------
+- [@navitux](https://github.com/navitux) (me)
