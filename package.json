@@ -4,7 +4,8 @@
   "description": "Ivan's personal web site and portfolio",
   "scripts": {
     "serve": "rm -rf dist/; npx @11ty/eleventy --serve",
-    "test": "npx @11ty/eleventy --dryrun"
+    "test": "npx @11ty/eleventy --dryrun",
+    "build": "rm -rf dist/; npx @11ty/eleventy"
   },
   "repository": {
     "type": "git",
