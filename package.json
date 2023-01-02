@@ -4,6 +4,7 @@
   "description": "Ivan's personal web site and portfolio",
   "main": "index.js",
   "scripts": {
+  	"run":"npx @11ty/eleventy --serve",
     "test": "npx @11ty/eleventy --dryrun"
   },
   "repository": {
