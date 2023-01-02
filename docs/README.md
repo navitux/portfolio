@@ -3,11 +3,15 @@ Ivan's Personal Website and Portfolio
 
 Technologies used
 -----------------
-- [Eleventy](https://github.com/11ty/eleventy/) (static site generator)
+- [Eleventy](https://www.11ty.dev/) ( [github repo](https://github.com/11ty/eleventy/) )
+
+### Front-End tech
+- [holiday.css](https://holidaycss.js.org/)
+- [tachyons](https://tachyons.io/)
 
 Licenses
 --------
-Code: MIT
+Code: [MIT](LICENSE)
 
 Art: [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)
 
