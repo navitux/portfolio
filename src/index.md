@@ -20,5 +20,11 @@ layout: base.njk
   
 {% endfor %}
 
-<h3 style="position:fixed; top:12%; right: 1%;">What's on Mastodon ?</h3>
-    <iframe style="position:fixed; top:22%; right: 1%;" allowfullscreen sandbox="allow-top-navigation allow-scripts" width="400" height="500" src="https://www.mastofeed.com/apiv2/feed?userurl=https%3A%2F%2Fmasto.nobigtech.es%2Fusers%2Fnavitux&theme=dark&size=100&header=true&replies=false&boosts=true"></iframe>
+<picture>
+    <img src="https://random.imagecdn.app/500/150">
+    <br>
+    <caption><small>(random image)</small></caption>
+</picture>
+
+<h3 class="mastofeed" style="position:fixed; top:12%; right: 1%;">What's on Mastodon ?</h3>
+    <iframe class="mastofeed" style="position:fixed; top:22%; right: 1%;" allowfullscreen sandbox="allow-top-navigation allow-scripts" width="400" height="500" src="https://www.mastofeed.com/apiv2/feed?userurl=https%3A%2F%2Fmasto.nobigtech.es%2Fusers%2Fnavitux&theme=dark&size=100&header=true&replies=false&boosts=true"></iframe>

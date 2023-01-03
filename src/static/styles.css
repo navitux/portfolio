@@ -1,0 +1,11 @@
+@media (max-width:1290px) {
+    .mastofeed{
+    display: none;
+    }
+}
+
+@media (max-width:720px){
+    .largenav{
+    display: none;
+    }
+}
