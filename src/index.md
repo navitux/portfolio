@@ -12,15 +12,15 @@ layout: base.njk
 <p class="animate__animated animate__fadeInUp animate__delay-2s">Feel free to check my most recent posts & projects I'm
     working on</p>
 
-<h3>Latest posts</h3>
+<!-- <h3>Latest posts</h3>
 
 {% for post in collections.posts %}
 
 - [{{post.data.title}}]({{post.url}})
   
-{% endfor %}
+{% endfor %} -->
 
-<picture>
+<picture class="animate__animated animate__fadeInUp animate__delay-4s">
     <img src="https://random.imagecdn.app/500/150">
     <br>
     <caption><small>(random image)</small></caption>

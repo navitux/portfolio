@@ -34,6 +34,7 @@
   "dependencies": {
     "@11ty/eleventy-plugin-directory-output": "^1.0.1",
     "animate.css": "^4.1.1",
+    "dayjs": "^1.11.7",
     "frontend-dependencies": "^2.0.0",
     "tachyons": "^4.12.0"
   },
