@@ -99,10 +99,11 @@
    <article id="mastodon">
     <h3><a rel="me" href="https://mstdn.mx/@ivantux">ivantux@mstdn.mx</a></h3>
     <p>Esto es una vista previa de mi microblog:</p>
-    <!-- <iframe allowfullscreen sandbox="allow-top-navigation allow-scripts 
-    allow-popups allow-popups-to-escape-sandbox"
-     width="80%" height="800"
-     src="https://www.mastofeed.com/apiv2/feed?userurl=https%3A%2F%2Fmstdn.mx%2Fusers%2Fivantux&theme=dark&size=100&header=false&replies=false&boosts=false"></iframe>-->
+    <div id="iframe_wrapper">
+     <iframe allowfullscreen sandbox="allow-top-navigation allow-scripts 
+     allow-popups allow-popups-to-escape-sandbox" width="80%" height="800"
+     src="https://www.mastofeed.com/apiv2/feed?userurl=https%3A%2F%2Fmstdn.mx%2Fusers%2Fivantux&theme=dark&size=100&header=false&replies=false&boosts=false"></iframe>
+    </div>
    </article>
   </section>
 
@@ -113,7 +114,7 @@
    <br>
    <a href="https://cryptpad.disroot.org/pad/#/2/pad/view/5Hy8TDcb+wq3QmLemJCzaGqNmDq4k71EpdRoOOozSL0/">
     Enlace a Mi CV en Español en Cryptpad</a>
-   <div id="resume_iframe">
+   <div id="iframe_wrapper">
     <iframe id="cv_iframe" src="static/Mi-CV-público-(ES).html" 
     frameborder="0"
     style="min-width: 820px; max-width: 820px; height: 600px;
@@ -133,9 +134,11 @@
  <footer>
   <small>
    <p>Esta página usa: 
-   Bamboo CSS, 
-   Alpinejs,
-   RSS-Parser </p>
+    <a href="https://rilwis.github.io/bamboo/">Bamboo CSS</a>, 
+    <a href="https://alpinejs.dev/">Alpinejs</a>,
+    <a href="https://github.com/rbren/rss-parser">RSS Parser</a>,
+    <a href="https://medium-zoom.francoischalifour.com/">Medium Zoom</a>
+   </p>
     <p>Ivan Robles <span x-text="new Date().getFullYear()"></span> copyleft</p>
   </small>
  </footer>

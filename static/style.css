@@ -16,7 +16,7 @@ header a, footer a{
 #cv_img{
  display: none;
 }
-#resume_iframe{
+#iframe_wrapper{
  display: flex;
  align-items: center;
  justify-content: center;
