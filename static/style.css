@@ -1,0 +1,31 @@
+@import url('bamboo.css');
+header,footer{
+ color:white;
+ text-align: center;
+ background: #4568DC;
+ /* fallback for old browsers */
+ background: -webkit-linear-gradient(to left, #B06AB3, #4568DC);
+ /* Chrome 10-25, Safari 5.1-6 */
+ background: linear-gradient(to left, #B06AB3, #4568DC);
+ /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+header a, footer a{
+ color: white;
+}
+/* CV styles */
+#cv_img{
+ display: none;
+}
+#resume_iframe{
+ display: flex;
+ align-items: center;
+ justify-content: center;
+}
+@media (max-width: 899px){
+ #cv_iframe{
+  display: none !important;
+ }
+ #cv_img {
+  display: block;
+ }
+}

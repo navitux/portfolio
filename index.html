@@ -2,32 +2,143 @@
 <html lang="es">
 <!-- the main language for my content will be Spanish, but I'll provide an English version -->
 <head>
-    <meta charset="UTF-8">
-    <title>🎉 Ivan Robles Website</title>
-    <!-- SEO stuff -->
-    <meta name="title" content="Ivan Robles Website y Portafolio">
-    <meta name="description"
-        content="Página web acerca de mí, Ivan Robles: mexicano, ingeniero en sistemas informáticos, aficionado al desarrollo de software, open source y freelance">
-    <meta name="keywords" content="personal,sitio web,portafolio,ivan,robles,desarrollador,freelance,software,ingeniero">
-    <meta name="robots" content="index, follow">
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <meta name="language" content="Spanish">
-    <meta name="revisit-after" content="1 days">
-    <meta name="author" content="Ivan Robles">
-    <!-- functional and style section -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <style>
-    /* custom color pallete for my site with day/night themes (good for the eyes) */
-    
-    </style>
+ <meta charset="UTF-8">
+ <title>bienvenido a mi sitio web</title>
+ <!-- SEO stuff -->
+ <meta name="title" content="Ivan Robles Website y Portafolio">
+ <meta name="description" content="Página web acerca de mí, Ivan Robles: 
+ mexicano, ingeniero en sistemas informáticos, aficionado al desarrollo de 
+ software, open source y freelance">
+ <meta name="keywords" content="personal,sitio web,portafolio,ivan,robles,
+ desarrollador,freelance,software,ingeniero">
+ <meta name="robots" content="index, follow">
+ <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+ <meta name="language" content="Spanish">
+ <meta name="revisit-after" content="1 days">
+ <meta name="author" content="Ivan Robles">
+ <!-- functional and style section -->
+ <link rel="icon" href="data:;base64,iVBORw0KGgo=">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <link rel="stylesheet" href="static/style.css">
+ <script src="static/alpinejs3.10.3.min.js"></script>
+ <script src="static/rss-parser3.7.6.min.js"></script>
+ <!-- zoom -->
+ <script src="static/medium-zoom.1.0.8.min.js"></script>
 </head>
 <body>
-    <header class="container">
-        <h1>Bienvenido al Sitio Web de Ivan 🎉</h1>
-    </header>
-    <main class="container">
-    </main>
-    <script src="script.js"></script>
+ <header>
+  <h1>Bienvenido al Sitio Web de Ivan 🎉</h1>
+  <small>Este espacio es mi sitio web personal y portafolio donde comparto lo 
+  que estoy haciendo</small>
+  <nav>
+   <small><a href="en/index.html">Switch to English</a></small>
+  </nav>
+ </header>
+ <!-- I use hr tags to separate parts in my website -->
+ <hr>
+ <main>
+  <noscript>
+    <div id="warning" style="border: 5px; border-radius: 2%; 
+    border-color:#E74646;
+    background-color:red;
+    color:white;">
+    <p>Si estás viendo esto Su navegador ha bloqueado la ejecución de 
+    Javascript. Esta página página web necesita Javascript para mostrar:</p>
+    <ul>
+        <li>Lash noticias de mi blog en
+        <a target="_blank" rel="noopener"
+        href="https://plume.otakufarms.com/@/ivantux"
+        style="color: white; text-decoration: underline;">Plume</a></li>
+        <li>El iFrame con mi  
+        <a target="_blank" rel="noopener"
+        href="https://mstdn.mx/@ivantux" style="color: white; 
+        text-decoration: underline;">
+        Mastodon</a></li>
+        <li>En el caso de las apps, normalmente necesitan Javascript para que
+        funcionen</li>
+    </ul>
+    </div>
+  </noscript>
+
+  <hr>
+  <section id="about">
+   <h2>Acerca de mí</h2>
+   <p>Este es mi sitio web personal en github pages con mirror en neocities, 
+   aquí comparto lo que he publicado en mi blog, mis proyectos, mi CV, mis 
+   redes y contacto.</p>
+   <ul>
+    <li>Soy Cristiano protestante</li>
+    <li>Tengo un trabajo fijo, pero siempre ando en proyectos personales por
+    cuenta propia siempre que peudo, y me encuentro abierto a ofertas como 
+    freelancer</li>
+    <li>Me gusta mucho Linux: tanto técnicamente como en lo que representa</li>
+    <li>Me gusta mucho el software <abbr title="Software Libre y Gratuito">
+    FLOSS</abbr></li>
+    <li>Me gustan los proyectos open hardware (aunque sigue siendo algo nuevo
+    para mí)</li>
+    <li>Me gusta la ciencia de datos</li>
+    <li>Redes descentralizadas/<abbr title="entre pares">P2P</abbr></li>
+    <li>Matemáticas</li>
+    <li>Física cuántica/de partículas</li>
+    <li>Ciencias de la Comunicación</li>
+   </ul>
+  </section>
+
+  <hr>
+  <section id="blog">
+   <h2>Blog</h2>
+
+   <article id="plume">
+    <h3><a target="_blank" rel="noopener" 
+    href="https://plume.otakufarms.com/@/ivantux">
+    otakufarms.com/ivantux</a></h3>
+    <p>Estos son algunos de los artículos más recientes en mi Blog:</p>
+    <div id="plume_feed"></div>
+   </article>
+
+   <article id="mastodon">
+    <h3><a rel="me" href="https://mstdn.mx/@ivantux">ivantux@mstdn.mx</a></h3>
+    <p>Esto es una vista previa de mi microblog:</p>
+    <!-- <iframe allowfullscreen sandbox="allow-top-navigation allow-scripts 
+    allow-popups allow-popups-to-escape-sandbox"
+     width="80%" height="800"
+     src="https://www.mastofeed.com/apiv2/feed?userurl=https%3A%2F%2Fmstdn.mx%2Fusers%2Fivantux&theme=dark&size=100&header=false&replies=false&boosts=false"></iframe>-->
+   </article>
+  </section>
+
+  <hr>
+  <section id="resume">
+   <h3>Mi <abbr title="Currículum Vitae">CV</abbr></h3>
+   <a href="static/Mi-CV-público-(ES).html">Enlace a mi CV en Español</a>
+   <br>
+   <a href="https://cryptpad.disroot.org/pad/#/2/pad/view/5Hy8TDcb+wq3QmLemJCzaGqNmDq4k71EpdRoOOozSL0/">
+    Enlace a Mi CV en Español en Cryptpad</a>
+   <div id="resume_iframe">
+    <iframe id="cv_iframe" src="static/Mi-CV-público-(ES).html" 
+    frameborder="0"
+    style="min-width: 820px; max-width: 820px; height: 600px;
+    border: 1px black solid; left:30vw;"></iframe>
+   </div>
+   <!-- image of top of resume for little screens  -->
+   <img id="cv_img" data-zoomable
+   src="https://images2.imgbox.com/b9/b1/Ju8piskz_o.png" 
+   alt="Captura de pantalla de la cabecera de mi CV en Español">
+  </section>
+
+  <hr>
+  <section id="contact">
+  </section>
+
+ </main>
+ <footer>
+  <small>
+   <p>Esta página usa: 
+   Bamboo CSS, 
+   Alpinejs,
+   RSS-Parser </p>
+    <p>Ivan Robles <span x-text="new Date().getFullYear()"></span> copyleft</p>
+  </small>
+ </footer>
+ <script src="static/script.js"></script>
 </body>
 </html>
