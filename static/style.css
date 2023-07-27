@@ -1,4 +1,7 @@
 @import url('bamboo.css');
+*{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
 header,footer{
  color:white;
  text-align: center;
@@ -17,7 +20,7 @@ header a, footer a{
 #cv_img{
  display: none;
 }
-#iframe_wrapper{
+#center_wrapper{
  display: flex;
  align-items: center;
  justify-content: center;
@@ -29,4 +32,37 @@ header a, footer a{
  #cv_img {
   display: block;
  }
+}
+
+/* contact card */
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+    font-family: arial;
+}
+
+.card-title {
+    color: grey;
+    font-size: 18px;
+}
+
+.card-button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+}
+
+.card-icon{
+    height: 1.5em;
+    width: auto;
+    margin: 0.5em;
 }
