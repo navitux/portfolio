@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<title>Taller de Programación Web - Bases </title>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.2.1/reset.min.css" integrity="sha512-Mjxkx+r7O/OLQeKeIBCQ2yspG1P5muhAtv/J+p2/aPnSenciZWm5Wlnt+NOUNA4SHbnBIE/R2ic0ZBiCXdQNUg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.2.1/reveal.css" integrity="sha512-8rXe5D6LberCopHR3L8wMNnnIhUQSQ5SfFjFtw2bk5AnrkI2eOk0S0QcqNh48/LLa4CapMLnAFaoulGrBI1D4Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.2.1/theme/black.min.css" integrity="sha512-DKeDMgkMDBNgY3g8T6H6Ft5cB7St0LOh5d69BvETIcTrP0E3d3KhANTMs5QOTMnenXy6JVKz/tENmffCLeXPiQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.2.1/plugin/highlight/monokai.css" integrity="sha512-ITi+aXPAZ6cIHUIulO7jdT3gOiN9w4xIkyqJjFleAkjp2PLj0+oKmjIRlEjudk1bBvjNu4EkyFMstRzwZ+E0GA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	</head>
+	<body>
+	<!-- slides -->
+	<div class="reveal">
+		<div class="slides" style="text-align: left;">
+			<section>
+				<h2>Taller de Programación Web - HTML, CSS, Javascript</h2>
+				<img 
+				src="https://cdn.shopify.com/s/files/1/0538/4070/7773/files/logo-org-color-500width_200x.png" alt="esposible.org" style="background-color: white; width:300px;"/>
+				<p 
+				style="font-size: 0.6em;">
+				por<br/>Ivan Robles
+			    </p>
+				<img src="media/cc.png" style="position: absolute; left: 0%;"/>
+				<br/>
+				<br/>
+                <small><a href="index.html">Volver al Índice</a></small>
+                <br/>
+                <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener noreferrer" style="font-size: 0.4em;">Esta obra está bajo una Licencia Creative Commons Atribución-CompartirIgual 4.0 Internacional</a>
+			</section>
+			<section>
+				<h3>Acerca de mí</h3>
+				<ul style="position: absolute; left:0%; text-justify: auto; font-size: 0.4em; max-width: 60%;">
+					<li>Ivan Robles.</li>
+					<li>Tengo 23 años, vivo con mi familia en la zona Metropolitana de Guadalajara, México.</li>
+					<li>Soy Tecnólogo Profesional en Sistemas Informáticos egresado de La Escuela Politécnica de Guadalajara (4 años).</li>
+					<li> Estudio la Lic. En Ing. En Sistemas Informáticos en la Universidad Latinoamericana UTEL con un avance curricular del 80%.</li>
+					<li>Hablo Inglés fluido cuya habilidad me ha ayudado a formar mi carrera en TI.</li>
+					<li>Tengo casi 4 años de experiencia trabajando en empresas del área de TI, siendo un año y medio aplicando mis conocimientos en programación y capacitandome.</li>
+					<li>He impartido un webinar y un curso de Linux desde cero hasta administrador en la transnacional donde trabajo.</li>
+					<li>Administrador Junior en sistemas Linux y entusiasta del Software Open Source.</li>
+					<li>Programador Junior en Python y en Front-end enfocado a webapps.</li>
+					<li>Desarrollo actualmente una aplicación web llamada "Workshops" basada en en el Framework Django que sirve como una plataforma para compartir cursos de manera sencilla y directa tanto para administradores como para el usuario de la plataforma, él código se encuentra en Sourceforge y Github, está en continuo desarrollo y actualmente con un fork en Flask en proceso.</li>
+				</ul>
+				<img 
+				src="media/myprofile.png"
+				style="position: absolute; right: 0%; transform: scale(5);"/>
+			</section>
+			<section>
+				<q>Internet se está convirtiendo en la plaza central de la aldea global del mañana.</q>
+				<p style="text-align: right;">-Anónimo</p>
+			</section>
+			<section>
+                <p><span style="font-size: 4em;">01</span> Fundamentos</p>
+            </section>
+			<section>
+				<h3>Índice</h3>
+				<ul>
+					<li>Bases</li>
+					<li>Internet</li>
+					<li>Páginas Web</li>
+				</ul>
+			</section>
+			<section>
+				<h1>1. BASES</h1>
+				<h3>Datos y Computadoras</h3>
+			</section>
+			<section>
+				<h3>1.1 Datos e Información</h3>
+			</section>
+			<section>
+				<p>La definición de "Dato" la RAE es:</p>
+				<q>1. m. Información sobre algo concreto que permite su conocimiento exacto o sirve para deducir las consecuencias derivadas de un hecho. </q>
+			</section>
+			<section>
+				<p>De acuerdo a <b>The Free Dictionary</b></p>
+				<q>inform. Representación convencional de un hecho o idea que puede ser tratada por un ordenador.</q>
+			</section>
+			<section>
+				<p>Ejemplos de datos con los que normalmente interactuamos:</p>
+				<ul>
+					<li>Nombres</li>
+					<li>Números</li>
+					<li>Letras</li>
+					<li>Palabras en sí</li>
+				</ul>
+			</section>
+			<section>
+				<p>Por ejemplo, las palabras representan objetos reales o abstractos, cada letra del alfabeto representa un sonido que hacemos para representar a su vez palabras las cuales forman frases, oraciones, órdenes o pensamientos y que otros puedan saberlos.</p>
+			</section>
+			<section>
+				<h2>En pocas palabras, el lenguaje escrito y hablado nos sirve para comunicar nuestros pensamientos a otros</h2>		
+			</section>
+			<section>
+				<p>Pero aquí está un detalle importante: Al igual que decir nombres, números y datos así sin más es inútil, así como necesitamos <u>articular</u> las palabras en oraciones, los datos organizados se convierten en <u>Información</u> </p>
+			</section>
+			<section>
+				<p>En otras palabras, no nos enfocamos en los <i>datos</i> sino en la <i>información</i> que estos crean</p>
+				<p>Son el objetivo de estudio y propósito en la Informática y por tanto de la programación en general, es por eso que abordamos desde esta instancia.</p>
+			</section>
+			<section>
+				<p>Para comunicar la información a otros es necesaria la <u>codificación</u>:</p>
+				<q>Codificar es representar
+					los elementos de un
+					conjunto mediante los de
+					otro, de forma tal que a
+					cada elemento del primer
+					conjunto le corresponda
+					un elemento distinto del
+					segundo.</q>
+				<br/>
+				<br/>
+				<p style="font-size: 0.5em; text-align: right;">- Fernando Berzal, Introducción a la Informática, 2004, pág. 4</p>
+			</section>
+			<section>
+				<b class="fragment">Para nosotros:</b>
+				<p class="fragment">Números, Alfabetos, imágenes, sonidos, gestos funcionan.</p>
+				<br/>
+				<b class="fragment">Para las Computadoras:</b>
+				<p class="fragment">Todo se reduce a 2 posibles estados binarios: 0 y 1 </p>
+			</section>
+			<section>
+				<p>Las medidas de "información" digital (o sea, las computadoras) son:</p>
+				<ul>
+					<li>Bit: 1 ó 0</li>
+					<li>Byte: 8 Bits (normalmente)</li>
+				</ul>
+			</section>
+			<section>
+				<b>Computadoras:</b>
+				<p>Por definición son:</p>
+				<q>... es una máquina electrónica que permite procesar y acumular datos. El término proviene del latín computare ('calcular').</q>
+				<p style="font-size: 0.5em; text-align: right;">- Definición.de , Enlace: https://definicion.de/computadora/ </p>
+			</section>
+			<section>
+				<p>Las partes importantes son: </p>
+				<img src="media/compu2.jpg" alt="">
+			</section>
+			<section>
+				<img src="media/datos-info.png" style=" width:1000px" />
+			</section>
+			<section>
+				Para sumarizar esta unidad tenemos:
+				<p class="fragment"><b>Dato:</b> Representación simbólica acerca de un hecho, suceso o entidad.</p>
+				<p class="fragment"><b>Información:</b> Conjunto ordenado de datos que forman un mensaje. Algo importante. Con un propósito.</p>
+				<p class="fragment"><b>Informática:</b> “Ciencia que estudia el tratamiento de la información por medio de máquinas automáticas.”</p>
+			</section>
+			<section>
+				<img src="media/data.png" style="transform: scale(2); display: block; margin: auto;"/>
+			</section>
+			<section data-background-image="media/bg1.jpg">
+				<h3>1.2 Internet </h3>
+				<p class="fragment" style="background-color:rgba(0,0,0, 0.3);">Porque las computadoras necesitan comunicarse también &#128515</p>
+			</section>
+			<section>
+				<h2 class="fragment">Internet</h2>
+				<p class="fragment">(De acuerdo a Wikipedia) “Es un conjunto descentralizado de redes de comunicaciones interconectadas, que utilizan la familia de protocolos TCP/IP”</p>
+			</section>
+			<section>
+				<p>Esquema ejemplo de Internet</p>
+				<img src="media/redes.jpg" />
+			</section>
+			<section>
+				<img src="media/internet-2.png" style="background-color:white;"/>
+			</section>
+			<section>
+				<p>Internet surgió por la nacesidad de poder transmitir y compartir información entre computadoras por lo que, internet no es más que un conjunto de protocolos para compartir información </p>
+			</section>
+			<section>
+				<img src="media/tcp-ip.png" style="transform: scale(1.5); display: block; margin: auto;"/>
+			</section>
+			<section>
+				<b>Modelos de Red:</b>
+				<img src="media/net.gif"/>
+			</section>
+			<section>
+				<p>El modelo de red más usado es el modelo de "cliente-servidor" </p>
+				<p>- El Servidor (computadoras especializadas en un Data Center para almacenar y proveer a través de internet) las páginas web y datos necesarios a los usuarios.</p>
+				<p>- El Cliente (computadora, laptop, tablet, smartphone que puede acceder al recurso) en el caso particular de las páginas web, debe tener un "user agent" que se traduce normalmente a un navegador web (Chrome, Firefoz, Safari, etc.) que pueda solicitar recursos por medio de los protocolos HTTP/HTTPS </p>
+			</section>
+			<section>
+				<p>Estos son los protocolos más usados en las capas correspondientes en la familia TCP/IP:</p>
+				<img src="media/protocols.png"/>
+			</section>
+			<section>
+				<p>En particular vamos a ver el protocolo de aplicación HTTP y HTTPS.</p>
+			</section>
+			<section>
+				<p>De acuerdo a Mozilla Foundation:</p>
+				<q>HTTP, de sus siglas en inglés: "Hypertext Transfer Protocol", es el nombre de un protocolo el cual nos permite realizar una petición de datos y recursos, como pueden ser documentos HTML.</q>
+				<p style="font-size: 0.5em; text-align: right;">-Generalidades del protocolo HTTP: https://developer.mozilla.org/es/docs/Web/HTTP/Overview</p>
+			</section>
+			<section>
+				<p>Por otra parte, podemos considerar a HTTPS como una versión mejorada de HTTP, al implementar una capa de seguridad.</p>
+			</section>
+			<section>
+				<p>Básicamente funciona así:</p>
+				<img src="media/http-e.png" />
+			</section>
+			<section>
+				<p>En más detalle es así una conexión HTTP/HTTPS:</p>
+				<img src="media/https.png"/>
+			</section>
+			<section>
+				<p>Principales Elementos Protocolo HTTP</p>
+				<p> <b>URL (Uniform Resource Locator)</b>
+					Un URI (Uniform Resource Identifier) que además proporciona la
+					información necesaria para localizar
+					y acceder al recurso se denomina
+					localizador uniforme de recurso
+					(URL, Uniform Resource Locator).</p>
+			</section>
+			<section>
+				<img src="media/uri.png"/>
+			</section>
+			<section>
+				<p>Entre los elementos más importantes tenemos, del lado del Cliente 'Request Methods' y del lado del servidor 'Response Status Codes'</p> 
+			</section>
+			<section style="text-align: center;">
+				<img src="media/cliente.png" style="transform: scale(1.5);" />
+			</section>
+			<section style="text-align: center;">
+				<img src="media/servidor.png" style="transform: scale(1.5);"/>
+			</section>
+			<section>
+				<h1>Página Web</h1>
+			</section>
+			<section>
+				<p>Es un documento electrónico capaz de contener
+					texto, contenido multimedia e hipervínculos que
+					permiten acceder a otras, el mismo está en
+					formato HTML auxiliado de CSS y Javascript
+					para su funcionamiento y presentación. Con una extensión .html</p>
+			</section>
+			<section>
+				<p class="fragment">Lenguaje de Marcado de Hipertexto: HTML (actualmente HTML5)</p>
+				<p class="fragment">Lenguaje de Estilo en Cascada: CSS (actualmente CSS3)</p>
+				<p class="fragment">Lenguaje de Programación: Javascript</p>
+			</section>
+			<section>
+				<p>Porqué conviene aprender desarrollo Web Front-End:</p>
+				<ul>
+					<li class="fragment">Amplia Contratación</li>
+					<li class="fragment">Trabajo Remoto y Home Office</li>
+					<li class="fragment">Como emprendedor de una PyME, da presencia y seriedad a tu negocio con un sitio A TUS PROPIAS PREFERENCIAS Y NECESIDADES</li>
+					<li class="fragment">Ayuda en preparación Integral de un Desarrollador Fullstack</li>
+					<li class="fragment">Sueldos competitivos en todo México: desde 17k hasta >30k de acuerdo a Indeed, OCC y LinkedIn </li>
+					<li class="fragment">Integra habilidades tanto Lógicas como de Diseño de Interfaces</li>
+				</ul>
+			</section>
+			<section data-background-image="media/bg2.jpg">
+				<h2>Herramientas y Recursos Necesarios para Empezar a Programar Páginas Web</h2>
+			</section>
+			<section>
+				<p class="fragment">Requisitos Mínimos: </p>
+				<ul>
+					<li class="fragment">Navegador Web Moderno</li>
+					<li class="fragment">Editor de Texto (opcional)</li>
+					<li class="fragment">(Incluso se puede aprender/practicar a programar desde un Smartphone)</li>
+				</ul>
+			</section>
+			<section data-background-image="media/bg2.jpg">
+				<h1>Competencias y Habilidades</h1>
+			</section>
+			<section>
+				<ul>
+					<li class="fragment">Conocimiento básico de cómo se usa una Computadora, Tableta o Teléfono Inteligente</li>
+					<li class="fragment">Conocimiento de las tecnologías  HTML, CSS y Javascript</li>
+					<li class="fragment">Habilidades de comunicación buenas para la colaboración en equipos y comunicación constante con el cliente así con jefes y compañeros</li>
+					<li class="fragment">Conocimiento y/o Manejo de Librerías y Frameworks Javascript para desarrollo Front-End</li>
+				</ul>
+			</section>
+			<section>
+				<p>Habilidades Deseables:</p>
+				<ul style="font-size: .8em;">
+					<li class="fragment">Manejo de Sistemas de Versiones (como Git, Subversion, Mercurial, etc.)</li>
+					<li class="fragment">Manejo de ciertos IDEs (Integrated Development Environment) como Visual Studio</li>
+					<li class="fragment">Manejo de Plataformas Externas en el proceso de desarrollo (entornos de Pruebas, Chats [Teamcity, Slack], Github, AWS)</li>
+					<li class="fragment">Terminal de comandos (normalmente GNU/Linux casi exclusivamente)</li>
+					<li class="fragment">Node.js</li>
+					<li class="fragment">SEO: Google Analitics</li>
+					<li class="fragment">Nivel respetable de Inglés</li>
+				</ul>
+			</section>
+			<section>
+				<p>Otros:</p>
+				<ul>
+					<li>IDE Online (Cloud9, Repl.it, Hackerrank)</li>
+					<li>Ciertos CMS (que tienen sitios prefabricados): Wordpress, Joomla, Wix</li>
+					<li>Manejo de contenido Multimedia (imágenes y video)</li>
+					<li>Bases de Diseño Gráfico</li>
+				</ul>
+			</section>
+			<section>
+				<p>Beneficios Psicológicos de la Programación de Software para las Personas:</p>
+				<ul>
+					<li class="fragment">Mejora Capacidad de Atención y Concentración</li>
+					<li class="fragment">Más autonomía y mayor interés por la experimentación y el aprendizaje</li>
+					<li class="fragment">Mayor orden y capacidad de comprensión</li>
+					<li class="fragment">Mejor capacidad de cálculo y de lógica</li>
+				</ul>
+			</section>
+			<section>
+				<p class="fragment">Una habilidad super importante de principio a fin para toda tu carrera como Programador es...</p>
+				<h2 class="fragment">Actitud de Aprendizaje Autodidacta</h2>
+			</section>
+			<section>
+				<h1>FIN</h1>
+				<a href="foundation.html">Inicio</a>
+                <br/>
+                <a href="index.html">Índice</a>
+			</section>
+		</div>
+	</div>
+	<!-- slides -->
+	<!-- Configuration and modules -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.2.1/reveal.min.js" integrity="sha512-/wlhXEDdbvt3WbfQwgZ4hRehxquuDDLja5DV0lyoW+5kSVaCaQV9EAEU6AmpAkXd+S5yV78TJK/+YqR0uy8h4Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.2.1/plugin/notes/notes.min.js" integrity="sha512-v2co+5nr0bgHekutTzF5jAB0UAjM95dpCF7VVw7WsFCjfxonbQo8Vwl487tNYl0iHWHHGV4o5xKBp5ifyhJkWg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.2.1/plugin/markdown/markdown.min.js" integrity="sha512-KSOrBsj0WKbq6xcEboor7XHEq+QQNVWXJ4IFXC/k7aR8ZATkUPA01ERRFMtkkApsGs71JpygBvs3eRNLammVoA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.2.1/plugin/highlight/highlight.min.js" integrity="sha512-U3fPDUX5bMrn1wnYqjaK44MFA9E6MKS+zPAg9WPAGF5XhReBeDj3FGaA831CjueG+YJxYA3WaO/m33kMIoOs/A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+				center: true,
+				slideNumber: true,
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+			});
+		</script>
+	</body>
+</html>

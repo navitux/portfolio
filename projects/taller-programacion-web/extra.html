@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Taller de Programación Web - Llevando a la práctica las bases de Programación Web </title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.2.1/reset.min.css"
+        integrity="sha512-Mjxkx+r7O/OLQeKeIBCQ2yspG1P5muhAtv/J+p2/aPnSenciZWm5Wlnt+NOUNA4SHbnBIE/R2ic0ZBiCXdQNUg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.2.1/reveal.css"
+        integrity="sha512-8rXe5D6LberCopHR3L8wMNnnIhUQSQ5SfFjFtw2bk5AnrkI2eOk0S0QcqNh48/LLa4CapMLnAFaoulGrBI1D4Q=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.2.1/theme/black.min.css"
+        integrity="sha512-DKeDMgkMDBNgY3g8T6H6Ft5cB7St0LOh5d69BvETIcTrP0E3d3KhANTMs5QOTMnenXy6JVKz/tENmffCLeXPiQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Theme used for syntax highlighted code -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.2.1/plugin/highlight/monokai.css"
+        integrity="sha512-ITi+aXPAZ6cIHUIulO7jdT3gOiN9w4xIkyqJjFleAkjp2PLj0+oKmjIRlEjudk1bBvjNu4EkyFMstRzwZ+E0GA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <!-- slides -->
+    <div class="reveal">
+        <div class="slides" style="text-align: left;">
+            <section>
+                <h2>Taller de Programación Web</h2>
+                <img src="https://cdn.shopify.com/s/files/1/0538/4070/7773/files/logo-org-color-500width_200x.png"
+                    alt="esposible.org" style="background-color: white; width:300px;" />
+                <p style="font-size: 0.6em;">
+                    por<br />Ivan Robles
+                </p>
+                <img src="media/cc.png" style="position: absolute; left: 0%;" />
+                <br />
+                <br/>
+                <small><a href="index.html">Volver al Índice</a></small>
+                <br />
+                <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener noreferrer"
+                    style="font-size: 0.4em;">Esta obra está bajo una Licencia Creative Commons
+                    Atribución-CompartirIgual 4.0 Internacional</a>
+            </section>
+            <section>
+                <p><span style="font-size: 4em;">03</span>Bases Prácticas Extra</p>
+            </section>
+            <section>
+                <h3>Temas a Ver en esta Unidad</h3>
+                <ul>
+                    <li class="fragment">Principios de Diseño</li>
+                    <li class="fragment">Herramientas en la Programación Web</li>
+                    <li class="fragment">Frameworks, Paradigmas y otros Recursos</li>
+                </ul>
+            </section>
+            <section data-background-image="media/bg7.png">
+                <h1 style="background-color: rgba(0,0,0,0.5);">Principios de Diseño Web</h1>
+            </section>
+            <section>
+                <p class="fragment">En resumen:</p>
+                <img class="fragment" src="media/uxiu.png" />
+            </section>
+            <section>
+                <p>Como guías de diseño en nuestras páginas web, podemos ayudarnos de principios y métodos en que
+                    coinciden los buenos diseños y tendencias actuales</p>
+            </section>
+            <section>
+                <p>Panal UX Peter Morville:</p>
+                <br />
+                <img src="media/panal.png" style="display: block; margin: auto; transform: scale(1.1);" />
+            </section>
+            <section>
+                <ul>
+                    <li>Útil <p class="fragment">El contenido debe ser original y satisfacer una necesidad</p>
+                    </li>
+                    <li>Utilizable <p class="fragment">El sitio debe ser fácil de usar</p>
+                    </li>
+                    <li>Deseable <p class="fragment">Las imágenes, identidad, marca y otros elementos de diseño se
+                            utilizan para evocar emoción y aprecio</p>
+                    </li>
+                </ul>
+            </section>
+            <section>
+                <ul>
+                    <li>Localizable <p class="fragment">El contenido debe ser navegable y localizable dentro y fuera del
+                            sitio</p>
+                    </li>
+                    <li>Accesible <p class="fragment"> El contenido debe ser accesible para las personas con
+                            discapacidad</p>
+                    </li>
+                    <li>Creíble <p class="fragment">Los usuarios deben confiar y creer en lo que se les dice</p>
+                    </li>
+                </ul>
+            </section>
+            <section>
+                <b>Arquitectura de la información</b>
+                <p>De acuerdo a el Information Architecture Institute: “La arquitectura de la información es la práctica
+                    de decidir cómo organizar las partes de algo para que sea comprensible”</p>
+            </section>
+            <section>
+                <p>Sus componentes son:</p>
+                <ul>
+                    <li class="fragment">Sistemas de Organización</li>
+                    <li class="fragment">Sistemas de Etiquetado</li>
+                    <li class="fragment">Sistemas de Navegación</li>
+                    <li class="fragment">Sistemas de Búsqueda</li>
+                </ul>
+            </section>
+            <section>
+                <p>Principios a Seguir de AI:</p>
+                <ul>
+                    <li class="fragment"><b>Arquitectura de Sitio debe ser Plana:</b> Tanto los usuarios como los
+                        rastreadores de búsqueda podrán acceder fácilmente a tu sitio y podrá estar mejor posicionado.
+                    </li>
+                    <li class="fragment"><b>Página Web Simple:</b> Minimalismo, la estructura debe ser lo más sencilla
+                        posible.</li>
+                    <li class="fragment"><b>Categorías:</b> Ordenar/clasificar la información, de esta manera, los
+                        usuarios podrán encontrar lo que buscan fácil.</li>
+                </ul>
+            </section>
+            <section>
+                <p>Principios a Seguir de AI:</p>
+                <ul>
+                    <li class="fragment"> <b>Usar URL Estructuradas:</b> De mano con las categorías, las URL del sitio
+                        deben estar igual de organizadas. Entre más cortas, mejor.</li>
+                    <li class="fragment"><b>Mapa de Sitio:</b> Esta es una buena manera de hacer fácil la navegación
+                        para los usuarios y optimizar el sitio para que los buscadores lo tomen en cuenta y lo coloquen
+                        en una posición más alta. Consiste en archivos que proporcionan información sobre las páginas,
+                        los videos y otros elementos de tu sitio, así como la relación entre ellos (puede estar en
+                        formato XML, por ejemplo).</li>
+                </ul>
+            </section>
+            <section>
+                <p>Metodologías en AI</p>
+                <ul>
+                    <li class="fragment"><b>Estructuras Jerárquicas:</b> siempre es recomendable plasmar las estructuras
+                        primero en algún diagrama para poder visualizar qué corresponde a qué.</li>
+                    <li class="fragment"><b>Wireframes:</b> La definición de wireframe es, básicamente, un modelo o
+                        prototipo que representa la vista del usuario de forma esquemática sin elementos de diseño:
+                        color o tipografías.</li>
+                </ul>
+            </section>
+            <section>
+                <p>Metodologías en AI</p>
+                <ul>
+                    <li class="fragment"><b>Taxonomía:</b> Es la forma de nombrar los contenidos y su forma de
+                        agruparse. La mejor forma para ordenar esto es hacer tarjetas con la información e irlas
+                        nombrando a medida que se vayan clasificando.</li>
+                    <li class="fragment"><b>Inventario de Contenido:</b> A través de un inventario podemos tener toda la
+                        información que vamos a ubicar en el sitio. Este documento nos permitirá no perder nada y ser
+                        cuidadosos con la forma de estructurarla.</li>
+                </ul>
+            </section>
+            <section>
+                <h1>IxD</h1>
+                <h1>Interaction Design</h1>
+            </section>
+            <section>
+                <q>El diseño de interacción (IxD) define la estructura y el comportamiento de sistemas interactivos. Los
+                    diseñadores de interacción buscan crear relaciones significativas entre las personas y los productos
+                    o servicios que estos usan, desde computadoras hasta dispositivos móviles, aparatos y más...</q>
+                <p style="font-size: medium; text-align: right;">Fuentes:
+                    https://blog.acantu.com/que-es-diseno-interaccion/ , https://ixda.org/ixda-global/about-history/</p>
+            </section>
+            <section>
+                <b>Dimensiones de IxD</b>
+                <ul>
+                    <li>Palabras: "Las palabras, especialmente las que se utilizan en las
+                        interacciones, como las etiquetas de los botones, deben ser significativas y fáciles de
+                        entender. Deben comunicar información a los usuarios, pero no demasiada información que abrume
+                        al usuario."</li>
+                </ul>
+            </section>
+            <section>
+                <ul>
+                    <li>Representaciones visuales: "Se trata de elementos gráficos como imágenes, tipografía e iconos
+                        con los que interactúan los usuarios. Suelen complementar las palabras que se utilizan para
+                        comunicar información a los usuarios."</li>
+                </ul>
+            </section>
+            <section>
+                <ul>
+                    <li>Espacio: "Con lo que interactúa el usuario en el mundo real. Estos pueden ser objetos físicos de
+                        hardware como un mouse, apuntador, teclado, joystick, que son utilizados como herramientas de
+                        mando."</li>
+                </ul>
+            </section>
+            <section>
+                <ul>
+                    <li>Tiempo: Se refiere a la duración que el usuario pasa interactuando con las palabras,
+                        representaciones visuales y el espacio.</li>
+                </ul>
+            </section>
+            <section>
+                <ul>
+                    <li>Comportamiento: "En la que se incluyen las emociones y reacciones que tiene el usuario al
+                        operar, presentar, utilizar o realizar una acción en el sistema."</li>
+                </ul>
+            </section>
+            <section>
+                <h1>La psicología de Gestalt</h1>
+            </section>
+            <section>
+                <p>O llamada también: “La psicología De La Forma“ es una corriente psicológica que surge en Alemania a principios del
+                    siglo XX por Max Wertheimer, Wolfgang Köhler, Kurt Koffka y Kurt Lewin. Donde Gestalt en alemán es
+                    “forma” o “configuración” la cual tiene leyes que explican “el origen de las percepciones a partir
+                    de los estímulos.”</p>
+            </section>
+            <section>
+                <p>Se basa en el Axioma:</p>
+                <q class="fragment"><b>El todo es más que la suma de sus partes.</b></q>
+            </section>
+            <section>
+                <h4>principios de Gestalt</h4>
+                <img src="media/gestalt.png" style="display:block; margin:auto; transform: scale(1.1);" />
+            </section>
+            <section>
+                <b>7 Principios de Diseño</b>
+                <br />
+                <br />
+                <br />
+                <img src="media/elementos.png" style="display:block; margin:auto; transform: scale(1.5);" />
+            </section>
+            <section>
+                <b>Líneas</b>
+                <br />
+                <img src="media/lines.png" style="display:block; margin:auto;" />
+            </section>
+            <section>
+                <b>Forma</b>
+                <br />
+                <br />
+                <img src="media/shapes.png" style="display:block; margin:auto; transform: scale(1.25);" />
+            </section>
+            <section>
+                <b>Objeto</b>
+                <br />
+                <br />
+                <img src="media/object.png" style="display:block; margin:auto; transform: scale(1.25);" />
+            </section>
+            <section>
+                <b>Textura</b>
+                <br />
+                <br />
+                <img src="media/texture.png" style="display:block; margin:auto; transform: scale(1.25);" />
+            </section>
+            <section>
+                <b>Espacio</b>
+                <br />
+                <br />
+                <br />
+                <br />
+                <img src="media/espacio.png" style="display:block; margin:auto; transform: scale(2);" />
+
+            </section>
+            <section>
+                <br />
+                <br />
+                <br />
+                <br />
+                <img src="media/espacio1.png" style="display:block; margin:auto; transform: scale(2);" />
+            </section>
+            <section>
+                <b>Tipografía</b>
+                <img src="media/tipografia.png" style="display:block; margin:auto; transform: scale(1.1);" />
+            </section>
+            <section>
+                <b>Color</b>
+                <img src="media/colors.png" style="display:block; margin:auto;" />
+            </section>
+            <section data-background-image="media/bg7.jpg">
+                <h1 style="background-color: rgba(0,0,0,0.4);">Herramientas de Programación Web</h1>
+            </section>
+            <section data-background-image="media/fw.png">
+                <h2 style="background-color: rgba(0,0,0,0.4);">Frameworks</h2>
+            </section>
+            <section>
+                <p class="fragment">“Framework” se traduce a “Marco de Trabajo” en Inglés</p>
+                <p class="fragment">En programación nos referimos a tanto un conjunto de bibliotecas (libraries),
+                    módulos y partes de software incluso lenguajes interpretados, así como técnicas, conceptos,
+                    patrones, esquemas y criterios que ayudan a programar software basado en todo esto y tener una misma
+                    base (por ejemplo) para un equipo de trabajo y puedan ir construyendo software dentro de los mismos
+                    principios y estilos principales.</p>
+            </section>
+            <section>
+                <b>Bibliotecas (o Librerías)</b>
+                <p class="fragment">Las “Bibliotecas” (llamadas librerías por el uso ) son un conjunto de funciones,
+                    clases u otros items listos para usarse por medio de una API bien definida.</p>
+                <p class="fragment">No se debe confundir una Biblioteca con un Framework, un Framework puede contener
+                    librerías, pero no al revés.</p>
+            </section>
+            <section data-background-image="media/tailwindcss.png">
+                <h3 style="background-color: rgba(0,0,0,0.8);">Tailwindcss</h3>
+                <p style="background-color: rgba(0,0,0,0.4);">Es un Framework CSS que permite tanto flexibilidad como sencillez</p>
+            </section>
+            <section>
+                <iframe width="1000" height="600" src="https://www.youtube.com/embed/XJhPta9hdcE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </section>
+            <section data-background-image="media/vuejs.png">
+                <h3 style="background-color: rgba(0,0,0,0.6);">Vue.js</h3>
+                <p style="background-color: rgba(0,0,0,0.6);">Es un Framework Javacript Progresivo que permite crear interfaces de usuario</p>
+            </section>
+            <section>
+                <iframe width="1000" height="600" src="https://www.youtube.com/embed/eXm7mJVPBqM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </section>
+            <section>
+                <b>API</b>
+                <p>Una API [Application Programming Interface] es la interfaz que permite a dos componentes de software independientes intercambiar información. Una API actúa como intermediaria entre las funciones internas del software y las externas, creando un intercambio de información tan fluido que a menudo pasa desapercibido para el usuario final</p>
+            </section>
+            <section>
+                <b>Librerías</b>
+                <p>Es normal, y a veces recomendado usar librerías para funcionalidades que necesitemos en nuestra página web, aunque ahora estemos viendo librerías de CSS (el cual no es un lenguaje de programación como tal) realmente conviene saber qué herramientas usar, cuándo y cómo</p>
+            </section>
+            <section data-background-image="media/libraries.png">
+                <p style="background-color: rgba(0,0,0,0.5);">Porque, es posible (y a veces mejor) usar librerías que no estén relacionadas con ningún framework. Por ejemplo está este sitio que permite buscar librerías por palabras clave: https://libraries.io/</p>
+            </section>
+            <section data-background-image="media/git.png">
+                <h1 style="background-color: rgba(0,0,0,0.5);">Git (Control de Versiones)</h1>
+            </section>
+            <section>
+                <p>Git es un sistema de control de versiones distribuido, gratuito y de código abierto, diseñado para gestionar desde proyectos pequeños hasta muy grandes con rapidez y eficacia.</p>
+            </section>
+            <section>
+                <ul>
+                    <li class="fragment">Es casi una obligación conocer Git para un puesto de Desarrollador Frontend
+                    </li>
+                    <li class="fragment">Facilita las versiones del código fuente de cualquier software</li>
+                    <li class="fragment">Su funcionamiento es muy similar a otros sistemas de control de código como Mercurial, por ejemplo</li>
+                    <li class="fragment">Se puede manejar desde scripts en terminal, así como en clientes gráficos sencillos así como plugins en varios IDEs</li>
+                </ul>
+            </section>
+            <section>
+                <img src="media/gitex.png" style="display: block; margin: auto; transform: scale(1.57);" />
+            </section>
+            <section>
+                <img src="media/gitphases.png" style="display: block; margin: auto; transform: scale(1.2);" />
+            </section>
+            <section>
+                <b>Generador de Páginas Web Estáticas</b>
+                <br />
+                <q>Un generador de sitios estáticos es una herramienta que genera un sitio web HTML estático completo
+                    basado en datos brutos y un conjunto de plantillas. Esencialmente, un generador de sitios estáticos
+                    automatiza la tarea de codificar páginas HTML individuales y las prepara para servir a los usuarios
+                    por adelantado. Como estas páginas HTML están preconstruidas, pueden cargarse muy rápidamente en los
+                    navegadores de los usuarios.</q>
+                <p style="font-size: medium; text-align: right;">(Traducido) - What is a static site generator?, Enlace:
+                    https://www.cloudflare.com/learning/performance/static-site-generator/</p>
+            </section>
+            <section>
+                <ul>
+                    <li class="fragment">Normalmente están diseñados para usarse desde la terminal</li>
+                    <li class="fragment">Pueden automatizar sitios estáticos con rapidez</li>
+                    <li class="fragment">Permite una amplia personalización</li>
+                    <li class="fragment">Entre los más famosos se encuentran: Hugo, Jekyll, Gatsby, Hexo</li>
+                </ul>
+            </section>
+            <section data-background-image="media/bg8.png">
+                <h1>Frameworks, Paradigmas y otros Recursos</h1>
+            </section>
+            <section>
+                <p>Una de las herramientas más requeridas y conveninentes de usar a largo plazo es la "Terminal de Comandos" del Sistema Operativo, de esa manera podemos automatizar el trabajo en nuestro entorno local, y en servidor</p>
+            </section>
+            <section>
+                <p>Como ejemplo, está NODE.JS, el cual es el entorno de ejecución de Javascript del lado del servidor (sin navegador web)</p>
+            </section>
+            <section>
+                <script id="asciicast-421414" src="https://asciinema.org/a/421414.js" async data-size="big"></script>
+            </section>
+            <section>
+                <h2>Un poco acerca de Integración Continua & Entrega Continua</h2>
+                <h2 class="fragment">CI/CD</h2>
+            </section>
+            <section>
+                <p>Esto es básicamente un concepto conocido también como "Despliegue Continuo", lo que son un conjunto de "cultura" y prácticas que permiten integrar y presentar cambios en el ciclo de vida del software
+                </p>
+            </section>
+            <section>
+                <h4>A continuación vamos a ver unas de las herramientas que nos ayudarán bastante, desde los primeros pasos hasta a proyectos grandes y complejos</h4>
+            </section>
+            <section>
+                <p>Normalmente se incluyen tareas como Control de Versiones, Pruebas, Integración y Despliegue</p>
+                <p class="fragment">A todo este conjunto de fases se les llama CI/CD pipeline o tubería de entrega
+                    continua</p>
+                <p class="fragment">Este rol y funciones propiamente se le llama "Cultura DevOps"</p>
+            </section>
+            <section>
+                <h2>¿ Bundler en JS ?</h2>
+            </section>
+            <section>
+                <p>"Bundle" en Español es "Paquete", en este contexto un "Bundler" es un "Empaquetador", lo cual es una utilidad en Javascript que nos permite optimizar el tamaño de los archivos en producción, pruebas o integración</p>
+            </section>
+            <section data-background-image="media/parcel.png">
+                <h2 style="background-color: rgba(0,0,0,0.9);">Parcel.js</h2>
+                <p style="background-color: rgba(0,0,0,0.9);">Es un Bundler de Javascript que permite hacer multitud de tareas con muy poco esfuerzo</p>
+            </section>
+            <section data-background-image="media/parcel.png">
+                <ul style="background-color: rgba(0,0,0,0.9);">
+                    <li>Optimiza el tamaño de los archivos en tu sitio/página web ¡Incluso las Imágenes!</li>
+                    <li>Los comandos personalizados son muy cortos y fáciles de entender</li>
+                    <li>Tiene integración muy buena con Frameworks y librerías CSS y Javascript</li>
+                    <li>Es una herramienta FOSS (Gratuita y de Código Abierto)</li>
+                </ul>
+            </section>
+            <section>
+                <iframe width="1000" height="600" src="https://www.youtube.com/embed/ptiPJCg5M-w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </section>
+            <section data-background-image="media/bg8.jpg">
+                <h1 style="background-color: rgba(0,0,0,0.5);">Otras Tecnologías </h1>
+            </section>
+            <section data-background-image="media/bg10.jpg">
+                <h1 style="background-color: rgba(0,0,0,0.7);">SPA (Single PAge Application)</h1>
+            </section>
+            <section data-background-image="media/bg10.jpg">
+                <q style="background-color: rgba(0,0,0,0.7);">...es una implementación de una aplicación web que carga un único documento web, y luego actualiza el contenido del cuerpo de ese único documento a través de APIs de JavaScript como XMLHttpRequest y Fetch cuando hay que mostrar un contenido diferente.</q>
+                <p style="background-color: rgba(0,0,0,0.7); font-size: medium; text-align: right;">(Mozilla Foundation, SPA(Single Page Application), Enlace: https://developer.mozilla.org/en-US/docs/Glossary/SPA)</p>
+            </section>
+            <section>
+                <iframe width="1000" height="600" src="https://www.youtube.com/embed/Fr5QGdJZBVo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </section>
+            <section data-background-image="media/bg9.jpg">
+                <h1 style="background-color: rgba(0,0,0,0.5);">Webassembly</h1>
+            </section>
+            <section data-background-image="media/bg9.jpg">
+                <q style="background-color: rgba(0,0,0,0.5);">... es un lenguaje de bajo nivel, similar al lenguaje ensamblador, con un formato binario compacto que se ejecuta con rendimiento casi nativo y provee un objetivo de compilación para lenguajes como C/C++ y Rust que les permite correr en la web. También está diseñado para correr a la par de JavaScript, permitiendo que ambos trabajen juntos.</q>
+                <p style="background-color: rgba(0,0,0,0.5); font-size: medium; text-align: right;">(Mozilla Foundation, WebAssembly, Enlace: https://developer.mozilla.org/es/docs/WebAssembly)</p>
+                <p></p>
+            </section>
+            <section>
+                <iframe width="1000" height="600" src="https://www.youtube.com/embed/_17Y0IeiWtQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </section>
+            <section>
+                <p>Ejemplos de aplicaciones con Webassembly: https://worldofwasm.bubbleapps.io/</p>
+            </section>
+            <section>
+                <h1>Recomendaciones Finales</h1>
+            </section>
+            <section>
+                <ul>
+                    <li class="fragment">Crea una cuenta en github.com y crea repositorios de tus páginas web</li>
+                    <li class="fragment">Usa el hosting gratuito de Github Pages u otros como Netlify o Neocities</li>
+                    <li class="fragment">Puedes buscar practicas y lecciones en sitios como MDN Mozilla Foundation, Hackerrank , freecodecamp.org</li>
+                    <li class="fragment">Haz tu portafolio personal o un blog en una página web (a la vieja escuela: ¡Tú Eres el Web Master Ahora!)</li>
+                    <li class="fragment">Comparte el curso con otras personas que les interese saber más de la programación de páginas Web</li>
+                </ul>
+            </section>
+            <section>
+                <p><b>Enlaces de Interés</b></p>
+                <ul style="font-size: .6em;">
+                    <li>https://www.freecodecamp.org/</li>
+                    <li>https://developer.mozilla.org/es/</li>
+                    <li>https://roadmap.sh/frontend</li>
+                    <li>https://jamstack.org/generators/</li>
+                    <li>https://staticsitegenerators.net/</li>
+                    <li>https://blog.maximeheckel.com/posts/guide-to-cicd-for-frontend-developers/</li>
+                    <li>https://tailwindcss.com/</li>
+                    <li>https://testing-library.com/docs/ecosystem-jest-dom/</li>
+                    <li>https://es.vuejs.org/v2/guide/</li>
+                    <li>https://parceljs.org/</li>
+                    <li>https://andreasbm.github.io/web-skills/</li>
+                    <li>https://worldofwasm.bubbleapps.io/</li>
+                    <li>https://ethereum.org/en/dapps/?category=technology</li>
+                </ul>
+            </section>
+            <section>
+                <h2>Pero lo más importante es...</h2>
+            </section>
+            <section>
+                <h1>¡Nunca Dejar de Aprender!</h1>
+            </section>
+            <section>
+                <h1>FIN</h1>
+                <a href="extra.html">Inicio</a>
+                <br/>
+                <a href="index.html">Índice</a>
+            </section>
+        </div>
+    </div>
+    <!-- slides -->
+    <!-- Configuration and modules -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.2.1/reveal.min.js"
+        integrity="sha512-/wlhXEDdbvt3WbfQwgZ4hRehxquuDDLja5DV0lyoW+5kSVaCaQV9EAEU6AmpAkXd+S5yV78TJK/+YqR0uy8h4Q=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.2.1/plugin/notes/notes.min.js"
+        integrity="sha512-v2co+5nr0bgHekutTzF5jAB0UAjM95dpCF7VVw7WsFCjfxonbQo8Vwl487tNYl0iHWHHGV4o5xKBp5ifyhJkWg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.2.1/plugin/markdown/markdown.min.js"
+        integrity="sha512-KSOrBsj0WKbq6xcEboor7XHEq+QQNVWXJ4IFXC/k7aR8ZATkUPA01ERRFMtkkApsGs71JpygBvs3eRNLammVoA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.2.1/plugin/highlight/highlight.min.js"
+        integrity="sha512-U3fPDUX5bMrn1wnYqjaK44MFA9E6MKS+zPAg9WPAGF5XhReBeDj3FGaA831CjueG+YJxYA3WaO/m33kMIoOs/A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        // More info about initialization & config:
+        // - https://revealjs.com/initialization/
+        // - https://revealjs.com/config/
+        Reveal.initialize({
+            hash: true,
+            center: true,
+            slideNumber: true,
+            // Learn about plugins: https://revealjs.com/plugins/
+            plugins: [RevealMarkdown, RevealHighlight, RevealNotes]
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,847 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<title>Taller de Programación Web - Bases de HTML, CSS y Javascript</title>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.2.1/reset.min.css" integrity="sha512-Mjxkx+r7O/OLQeKeIBCQ2yspG1P5muhAtv/J+p2/aPnSenciZWm5Wlnt+NOUNA4SHbnBIE/R2ic0ZBiCXdQNUg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.2.1/reveal.css" integrity="sha512-8rXe5D6LberCopHR3L8wMNnnIhUQSQ5SfFjFtw2bk5AnrkI2eOk0S0QcqNh48/LLa4CapMLnAFaoulGrBI1D4Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.2.1/theme/black.min.css" integrity="sha512-DKeDMgkMDBNgY3g8T6H6Ft5cB7St0LOh5d69BvETIcTrP0E3d3KhANTMs5QOTMnenXy6JVKz/tENmffCLeXPiQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.2.1/plugin/highlight/monokai.css" integrity="sha512-ITi+aXPAZ6cIHUIulO7jdT3gOiN9w4xIkyqJjFleAkjp2PLj0+oKmjIRlEjudk1bBvjNu4EkyFMstRzwZ+E0GA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	</head>
+	<body>
+	<!-- slides -->
+	<div class="reveal">
+		<div class="slides" style="text-align: left;">
+			<section>
+				<h2>Taller de Programación Web</h2>
+				<img 
+				src="https://cdn.shopify.com/s/files/1/0538/4070/7773/files/logo-org-color-500width_200x.png" alt="esposible.org"
+				style="background-color: white; width:300px;"/>
+				<p 
+				style="font-size: 0.6em;">
+				por<br/>Ivan Robles
+			    </p>
+				<img src="media/cc.png" style="position: absolute; left: 0%;"/>
+                <br/>
+                <br/>
+                <small><a href="index.html">Volver al Índice</a></small>
+                <br/>
+                <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener noreferrer" style="font-size: 0.4em;">Esta obra está bajo una Licencia Creative Commons Atribución-CompartirIgual 4.0 Internacional</a>
+			</section>
+            <section>
+                <p><span style="font-size: 4em;">02</span>Bases Web HTML, CSS y Javascript</p>
+            </section>
+            <section>
+                <p>Vamos a abordar el aspecto técnico acerca de las tecnologías que involucran las páginas web</p>
+            </section>
+            <!-- HTML PART -->
+            <section data-background-image="media/html5.jpg">
+                <h1>HTML</h1>
+            </section>
+            <section>
+                <b>HTML (Hypertext Markup Language)</b>
+                <br/>
+                <q class="fragment">...es un lenguaje de marcado que define la estructura del contenido. HTML consiste en una serie de elementos que se utilizan para encerrar, o envolver, diferentes partes del contenido para que aparezca de una manera determinada, o actúe de una manera determinada.</q>
+                <p class="fragment">En la versión HTML5, también ha adquirido una estructura semántica, y cada vez menos de estilo (que se deja para CSS)</p>
+            </section>
+            <section>
+                <b>Algo de Historia</b>
+                <ul>
+                    <li class="fragment">Presentado en 1991 por Tim Berners-Lee y lanzado en 1993</li>
+                    <li class="fragment">Basa su sintaxis en etiquetas, que son corchetes angulares ( &#60; &#62; ) que contienen a cada “elemento”</li>
+                    <li class="fragment">La última versión estable es la del 21 de Enero 2022</li>
+                </ul>
+            </section>
+            <section style="text-align: center;">
+                <img src="media/tags.png"/>
+            </section>
+            <section>
+                <b>Tipos de Elementos:</b>
+                <ul>
+                    <li class="fragment">Globales</li>
+                    <li class="fragment">Metadatos</li>
+                    <li class="fragment">Secciones</li>
+                    <li class="fragment">Agrupaciones</li>
+                    <li class="fragment">Semántica Nivel Texto</li>
+                    <li class="fragment">Contenido embebido y Multimedia</li>
+                    <li class="fragment">Formularios</li>
+                    <li class="fragment">Scripts</li>
+                </ul>
+            </section>
+            <section>
+                <h3>Globales</h3>
+                <p>&#60;html&#62; (document)
+                    Básicamente representa al DOM, contiene todo en un
+                    documento HTML
+                    Contenido: Elemento &#60;head&#62; seguido de un &#60;body&#62;
+                    OBLIGATORIO</p>
+            </section>
+            <section>
+                <h3>Atributos Globales</h3>
+                    <p>Se aplican a todo elemento, por lo que pueden o no tener un efecto</p>
+                    <table>
+                        <tr>
+                            <td>
+                                <ul class="fragment">
+                                    <li>accesskey</li>
+                                    <li>autocapitalize</li>
+                                    <li>autofocus</li>
+                                    <li>contenteditable</li>
+                                    <li>dir</li>
+                                    <li>draggable</li>
+                                    <li>enterkeyhint</li>
+                                </ul>
+                            </td>
+                            <td>
+                                <ul class="fragment">
+                                    <li>hidden</li>
+                                    <li>inputmode</li>
+                                    <li>is</li>
+                                    <li>itemid</li>
+                                    <li>itemprop</li>
+                                    <li>itemref</li>
+                                    <li>itemscope</li>
+                                </ul>
+                            </td>
+                            <td>
+                                <ul class="fragment">
+                                    <li>itemtype</li>
+                                    <li>lang</li>
+                                    <li>nonce</li>
+                                    <li>spellcheck</li>
+                                    <li>style</li>
+                                    <li>tabindex</li>
+                                    <li>title</li>
+                                    <li>translate</li>
+                                </ul>
+                            </td>
+                        </tr>
+                    </table>
+            </section>
+            <section>
+                <h3>Metadatos</h3>
+                <ul style="font-size:0.7em;">
+                    <li class="fragment">&#60;head&#62; contiene los siguientes elementos de metadatos y siempre está después de &#60;html&#62; y antes de &#60;body&#62; OBLIGATORIO.</li>
+                    <li class="fragment">&#60;title&#62; Representa de manera formal el nombre del documento, así mismo da contexto al documento (aparece en la pestaña del navegador).</li>
+                    <li class="fragment">&#60;base/&#62; Sirve para establecer una URL base para las direcciones relativas en el documento.</li>
+                    <li class="fragment">&#60;link/&#62; Representa enlaces a otros recursos a ser empleados por el documento actual, normalmente lo utilizaremos para enlazar documentos CSS de estilo.</li>
+                    <li class="fragment">&#60;meta/&#62; “...representa varios tipos de metadatos que no pueden expresarse mediante los elementos title, base, link, style y script.” útil para SEO y el charset en el navegador por ejemplo.</li>
+                    <li class="fragment">&#60;style&#62; Sirve para incluir reglas CSS DENTRO del documento actual.</li>
+                </ul>
+            </section>
+            <section>
+                <h3>Secciones</h3>
+                <ul style="font-size:0.7em;">
+                    <li class="fragment">&#60;body&#62; Representa y contiene a todos los contenidos del documento, todos los elementos visuales se encuentran aquí.</li>
+                    <li class="fragment">&#60;article&#62; “...representa una composición auto-contenida en un documento, página, una aplicación o en el sitio...[como] un mensaje en un foro, un artículo de una revista o un periódico, una entrada de blog, un comentario de un usuario, un widget interactivo o gadget</li>
+                    <li class="fragment">&#60;section&#62; “...representa una sección genérica de un documento. Sirve para determinar qué contenido corresponde a qué parte de un esquema...omo en el índice de contenido de un libro; un tema común y subsecciones relacionadas.”</li>
+                    <li class="fragment">&#60;nav&#62; “...representa una sección de una página cuyo propósito es proporcionar enlaces de navegación, ya sea dentro del documento actual o a otros documentos.”</li>
+                    <li class="fragment">&#60;aside&#62; “... representa una sección de una página que consiste en contenido que está indirectamente relacionado con el contenido principal del documento.” como glosarios, publicidad, una biografía, etc. HTML5</li>
+                </ul>
+            </section>
+            <section>
+                <h3>Agrupaciones</h3>
+                <ul>
+                    <li class="fragment">&#60;p&#62; Representa un párrafo.</li>
+                    <li class="fragment">&#60;hr/&#62;
+                        Representa un cambio de tema por una línea continua</li>
+                    <li class="fragment">&#60;pre&#62;
+                        Contiene un bloque de texto preformateado (respetando cada espacio y línea en
+                        blanco)</li>
+                    <li class="fragment">&#60;blockquote&#62;
+                        Representa una sección citada de otra fuente.</li>
+                    <li class="fragment">&#60;ol&#62;
+                        Representa una lista ordenada y numerada que contiene elementos &#60;li&#62;</li>
+                    <li class="fragment">&#60;ul&#62;
+                        Representa una lista desordenada que contiene elementos &#60;li&#62;</li>
+                </ul>
+            </section>
+            <section>
+                <h3>Semántica Nivel Texto</h3>
+                <ul>
+                    <li class="fragment">&#60;a&#62; “...crea un enlace a otras páginas de internet, archivos o ubicaciones dentro de la misma página, direcciones de correo, o cualquier otra URL.”</li>
+                    <li class="fragment">&#60;abbr&#62; “...representa una abreviación o acrónimo.”</li>
+                    <li class="fragment">&#60;b&#62; “b de bold=negrita.”</li>
+                    <li class="fragment">&#60;code&#62; Elemento que contiene algún tipo de código fuente.</li>
+                    <li class="fragment">&#60;data&#62; “...vincula un contenido dado con una traducción legible por una máquina.”
+                        Ej.: &#60;p&#62;&#60;data value="3967381398"&#62;Mini Ketchup&#60;/data&#62;&#60;/p&#62;</li>
+                    <li class="fragment">&#60;br/&#62; Salto de línea</li>
+                </ul>
+            </section>
+            <section>
+                <h3>Contenido Embebido y Multimedia</h3>
+                <ul style="font-size: 0.8em;">
+                    <li class="fragment">&#60;iframe&#62; “...(de inline frame) representa un contexto de navegación anidado, el cual permite incrustrar otra página HTML en la página actual.”</li>
+                    <li class="fragment">&#60;object&#62; “... representa un recurso externo, que puede ser tratado como una imagen, un contexto de navegación anidado, o como un recurso que debe ser manejado por un plugin.” como para leer un documento PDF dentro del navegador con el lector integrado.”</li>
+                    <li class="fragment">&#60;param/&#62; Define parámetros para elementos invocados por &#60;object&#62;</li>
+                    <li class="fragment">&#60;picture&#62; “...es un contenedor usado para especificar múltiples elementos &#60;source&#62; y un elemento &#60;img&#62; contenido en él para proveer versiones de una imagen para diferentes escenarios de dispositivos.”</li>
+                </ul>
+            </section>
+            <section>
+                <h3>Formularios</h3>
+                <ul style="font-size: 0.7em;">
+                    <li class="fragment">&#60;form&#62; “...representa una sección de un documento que contiene controles interactivos que permiten a un usuario enviar información a un servidor web.”</li>
+                    <li class="fragment">&#60;input&#62; Elemento interactivo que sirve para que el usuario introduzca uno de varios tipos de datos permitidos (tal vez una de las etiquetas más complejas)</li>
+                    <li class="fragment">&#60;button&#62; Representa un objecto para hacer click empleado en formularios para varios propósitos (enviar formulario, borrar datos ingresados, etc.) incluso tiene usos meramente de presentación en la página web como parte de la UI.</li>
+                    <li class="fragment">&#60;label&#62; Representa un texto descriptivo para algún &#60;input&#62; o &#60;button&#62; en el formulario.</li>
+                    <li class="fragment">&#60;textarea&#62; “...representa un control de edición de texto plano de varias líneas, útil cuando se desea permitir a los usuarios introducir una cantidad considerable de texto de forma libre, por ejemplo, un comentario en un formulario de revisión o retroalimentación.”</li>
+                </ul>
+            </section>
+            <section>
+                <h3>Scripts</h3>
+                <ul style="font-size: 0.8em;">
+                    <li class="fragment">&#60;script&#62; Se usa para insertar (embeber) un script o hacer referencia a un archivo de script</li>
+                    <li class="fragment">&#60;canvas&#62; Se emplea para renderizar dibujos por código (JS), composiciones en fotos o animaciones</li>
+                    <li class="fragment">&#60;noscript&#62; Contiene contenido que se muestra si los elementos &#60;script&#62; no se pueden ejecutar (como desactivando los scripts en el navegador)</li>
+                </ul>
+            </section>
+            <section style="text-align: center;">
+                <p>Estructura del código fuente HTML</p>
+                <br/>
+                <img src="media/sourceCode.png" style="transform: scale(1.5);"/>
+            </section>
+            <section style="text-align: center;">
+                <p>Estructura <u>Semántica</u> de HTML</p>
+                <br/>
+                <img src="media/semantics.png" style="transform: scale(1.4);"/>
+            </section>
+            <section>
+                <p><span style="font-size: 2em;">DOM</span> (Document Object Model)</p>
+                <p class="fragment">El DOM es un modelo de documento [y la API] que se carga en el navegador web y que representa el documento como un árbol de nodos [elementos HTML], en donde cada nodo representa una parte del documento (puede tratarse de un elemento, una cadena de texto o un comentario).</p>               
+            </section>
+            <section style="text-align: center;">
+                <p>Estructura y Jerarquía del DOM</p>
+                <br/>
+                <img src="media/dom.png" style="scale: 1.3;"/>
+            </section>
+            <section data-background-image="media/bg3.png">
+                <h1>Herramientas para HTML</h1>
+            </section>
+            <section data-background-image="media/bg3.png">
+                <p style="background-color: black;">Debido a que HTML es un lenguaje de marcado con muchos años de existencia y muchas compañías de software han querido imponer sus propias formas de interpretearlo, hay ciertas cosas que podemos hacer para minimizar estos inconvenientes e incluso optmizar nuestro tiempo de desarrollo de codificación como programadores del sitio </p>
+            </section>
+            <section data-background-image="media/caniuseSite.png">
+                <h3 style="background-color:rgba(0,0,0,0.5);">Sitio: Can I use ?</h3>
+                <p style="background-color:rgba(0,0,0,0.5);">Este sitio es muy útil y práctico, ya que permite verificar qué funciones o características se pueden usar en determinadas versiones de navegadores (según las necesidades y plataformas usadas) tanto de Computadora como en Smartphones: https://caniuse.com</p>
+            </section>
+            <section data-background-image="media/htmlam.png">
+                <h3 style="background-color:rgba(0,0,0,0.5);">Sitio: &#60;HTML.am&#62;</h3>
+                <p style="background-color:rgba(0,0,0,0.5);">Este sitio viene con muchas herramientas para novatos o inexpertos de una manera sencilla y amigable, unas de sus utilidades más destacables es su edtor de HTML WYSIWYG (What You See Is What You Get) las tablas de caracteres especiales en HTML y las plantillas en HTML vanilla que ofrece: https://www.html.am/templates/</p>
+            </section>
+            <section data-background-image="media/mdn.png">
+                <h3 style="background-color:rgba(0,0,0,0.8);">Sitio: MDN Web Docs </h3>
+                <p style="background-color:rgba(0,0,0,0.8);">Es considerado una de las fuentes más confiables de información para Desarrolladores Web en el mundo, aunque el navegador de Mozilla sigue siendo usado por una minoría (Firefox), la mayor parte del contenido está traducido en Español, vienen desde referencias de tecnologías HTML,CSS y JS así como tutoriales, guías y recomendaciones: https://developer.mozilla.org/es/</p>
+            </section>
+            <section data-background-image="media/w3c.png">
+                <h3 style="background-color:rgba(0,0,0,0.5);">Sitio: W3C Markup Validation Service </h3>
+                <p style="background-color:rgba(0,0,0,0.5);">Es un sitio que permite verificar si un archivo .html está correctamente redactado y su sintaxis es correcta de acuerdo al estándar (aunque no se cumplan con las reglas o haya errores en el HTML, el sitio se renderizará de todas formas debido a a robustez de los motores web actuales): https://validator.w3.org/</p>
+            </section>
+            <section data-background-image="media/htmlminifier.png">
+                <h3 style="background-color:rgba(0,0,0,0.5);">Sitio: HTML minifier </h3>
+                <p style="background-color:rgba(0,0,0,0.5);">Es un sitio hecho en github, cuya función es la minimizar el tamaño de los archivos .html que escribamos o subamos al sitio, esto es bastante útil ya que uno de los retos que siempre se enfrentan es la de la velocidad de carga de los sitios en internet</p>
+            </section>
+            <section data-background-image="media/atom.png">
+                <h3 style="background-color:rgba(0,0,0,0.5);">IDE: Atom </h3>
+                <p style="background-color:rgba(0,0,0,0.5);">Es un editor de texto creado para ser usado con Git y Github por default, es muy versátil y tiene multitud de plugins y extensiones muy útiles por parte de la comunidad y es multiplataforma: https://atom.io/</p>
+            </section>
+            <section data-background-image="media/visualstudiocode.png">
+                <h3 style="background-color:rgba(0,0,0,0.5);">IDE: Visual Studio Code (VSCodium) </h3>
+                <p style="background-color:rgba(0,0,0,0.5);">Es un editor de código e IDE creado por Microsoft, tiene buen redimiento, es de uso general y al igual que Atom tiene muchos plugins y extensiones disponibles gracias a su gran comunidad: https://code.visualstudio.com/</p>
+            </section>
+            <section data-background-image="media/emmet.png">
+                <h3 style="background-color:rgba(0,0,0,0.5);">Extensión: Emmet </h3>
+                <p style="background-color:rgba(0,0,0,0.5);">Tal vez sea uno de los plugins más extendidos y usados en la programación de páginas Web, permite escribir código HTML de manera mucho más ágil y veloz y está soportado por varios editores de código actualmente (incluso por algunos editores Online): https://emmet.io/</p>
+            </section>
+            <section style="text-align: center;">
+                <img src="media/emmetgif.gif"/>
+            </section>
+            <section data-background-image="media/codesandbox.png">
+                <h3 style="background-color:rgba(0,0,0,0.5);">Online IDE: CodeSandbox </h3>
+                <p style="background-color:rgba(0,0,0,0.5);">Es uno de los mejores editores de código en línea de HTML/CSS/Javascript y es de uso gratuito, tiene integración con Github además de que enfocado al desarrollo de páginas web teniendo multitud de plantillas con distintos Frameworks, recomendado: https://codesandbox.io/</p>
+            </section>
+            <section data-background-image="media/theia.png">
+                <h3 style="background-color:rgba(0,0,0,0.5);"> IDE Híbrido: Theia </h3>
+                <p style="background-color:rgba(0,0,0,0.5);">Es un editor Online cuyo backend y frontend están claramente separados, es muy flexible ya que la interfaz se ejecuta en el lado del navegador, pero el backend puede estar en la nube o incluso en la máquina local, lo que habilita enorme flexibilidad aunando que es Software Open Source y Gratuito, además de que declara tener más modularidad para personalizaciones: https://theia-ide.org/</p>
+            </section>
+            <section data-background-image="media/codepen.png">
+                <h3 style="background-color:rgba(0,0,0,0.8);"> Snippets Online: Codepen </h3>
+                <p style="background-color:rgba(0,0,0,0.8);">Es una plataforma para subir snippets (pequeñas piezas de código) y compartirlos en otros sitios manera interactiva, es una herramienta muy completa, sobre todo para compartir código basado en HTML,CSS y JS: https://codepen.io/</p>
+            </section>
+            <section data-background-image="media/github.png">
+                <h3 style="background-color:rgba(0,0,0,0.5);"> Repositorio, Snippets, Código, CI&CD: Github </h3>
+                <p style="background-color:rgba(0,0,0,0.5);">Es el sitio de repositorio de código fuente social más famoso del mundo, está diseñado para su uso gratuito, público , privado y empresarial, hay muchísimos sitios, código fuente de todo tipo de tecnologías y lenguajes de programación donde talentosos programadores comparten su software con el mundo</p>
+            </section>
+            <!-- CSS PART -->
+            <section data-background-image="media/css.png">
+                <h1 style="background-color: rgba(0,0,0,0.8);">CSS (Cascade Style Sheet)</h1>
+            </section>
+            <section data-background-image="media/bg4.jpg">
+                <q style="background-color: rgba(0,0,0,0.8);">CSS (hojas de estilo en cascada), describe cómo deben mostrarse los elementos HTML en la pantalla, en el papel o en otros medios. Ahorra mucho trabajo. Puede controlar el diseño de varias páginas web a la vez. Las hojas de estilo externas se almacenan en archivos CSS</q>
+                <br/>
+                <p style="font-size:medium; text-align: right;">-(Traducido) CSS Introduction, URL: https://www.w3schools.com/css/css_intro.asp</p>
+            </section>
+            <section>
+                <h4>Historia de CSS</h4>
+                <ul>
+                    <li class="fragment">Propuesto como tal en el ‘94 por el colega de Tim Berners-Lee: Hakon Wium Lie</li>
+                    <li class="fragment">Podría decirse que las hojas de estilos existen desde los 80’s aplicado a SGML</li>
+                    <li class="fragment">Hasta el momento la última versión es la del 2015</li>
+                    <li class="fragment">NO ES UN LENGUAJE DE PROGRAMACIÓN</li>
+                </ul>
+            </section>
+            <section style="text-align: center;">
+                <img src="media/css3.png"/>
+            </section>
+            <section style="text-align: center;">
+                <p>Sintaxis y partes básicas de CSS </p>
+                <br/>
+                <img src="media/syntaxcss.png" style="transform: scale(1.3);"/>
+            </section>
+            <section>
+                <h2>Selectores</h2>
+                <ul>
+                    <li class="fragment">Simples: Selecciona por nombre, ID o clase del o los elementos</li>
+                    <li class="fragment">Combinados: Selecciona elementos basado en su relación</li>
+                    <li class="fragment">Pseudo-clases: Selecciona elementos en un determinado estado</li>
+                    <li class="fragment">Pseudo-elementos: Selecciona parte de los elementos</li>
+                    <li class="fragment">Atributos: Selecciona por atributo de los elementos HTML</li>
+                </ul>
+            </section>
+            <section>
+                <h3>Selectores Simples</h3>
+                <p class="fragment" style="font-size: 0.8em;"><b>Nombre:</b> Simplemente el nombre del elemento HTML</p>
+                <br/>
+                <img class="fragment" src="media/4c.png" style="display: block; margin: auto;"/>
+            </section>
+            <section>
+                <h3>Selectores Simples</h3>
+                <p class="fragment" style="font-size: 0.8em;"><b>ID:</b> Todo elemento HTML cuyo atributo “id” sea el indicado en CSS</p>
+                <br/>
+                <img class="fragment" src="media/3c.png" style="transform: scale(1.5); display: block; margin: auto;"/>
+            </section>
+            <section>
+                <h3>Selectores Simples</h3>
+                <p class="fragment" style="font-size: 0.8em;"><b>Clase:</b> Todo elemento HTML cuyo atributo “class” sea el indicado en CSS</p>
+                <br/>
+                <img class="fragment" src="media/2c.png" style="transform: scale(1.5); display: block; margin: auto;"/>
+            </section>
+            <section>
+                <h3>Selectores Combinados</h3>
+                <p class="fragment" style="font-size: 0.8em;"><b>Descendant:</b> Se define como varios selectores unidos por un simple espacio en blanco, los cuales estan anidados de izquierda a derecha (no importa si hay otros elementos en medio)</p>
+                <br/>
+                <img class="fragment" src="media/1c.png" style="transform: scale(1.5); display: block; margin: auto;"/>
+            </section>
+            <section>
+                <h3>Selectores Combinados</h3>
+                <p class="fragment" style="font-size: 0.8em;"><b>Child:</b> Se indica con “mayor que” “>” y selecciona el 2do elemento inmediatamente anidado en el 1ro</p>
+                <br/>
+                <img class="fragment" src="media/5c.png" style="transform: scale(1.5); display: block; margin: auto;"/>
+            </section>
+            <section>
+                <h3>Selectores Combinados</h3>
+                <p class="fragment" style="font-size: 0.8em;"><b>Adjacent Sibling:</b>  “Hermano Adyacente” Se indica con signo de “más” “+” y selecciona el 2do elemento si el primero si antes está inmediatamente después del 1ro</p>
+                <br/>
+                <img class="fragment" src="media/6c.png" style="transform: scale(1.5); display: block; margin: auto;"/>
+            </section>
+            <section>
+                <h3>Selectores Combinados</h3>
+                <p class="fragment" style="font-size: 0.8em;"><b>General Sibling:</b> “Hermano Genérico”Se indica con signo “tilde” “~” y selecciona los elementos dentro del padre después del primero</p>
+                <br/>
+                <img class="fragment" src="media/7c.png" style="transform: scale(1.5); display: block; margin: auto;"/>
+            </section>
+            <section>
+                <p><span style="font-size: 2em;">Pseudoclases</span><br/>Son compañeros de todos los Selectores previos no son elementos ni atributos,representan un estado que puede ser resultado de algún evento en la página:</p>
+                <p>Ejemplos:</p>
+                <p>p:last-child { color:green }</p>
+                <p>a:hover { background-color:red }</p>
+            </section>
+            <section>
+                <h3>Pseudoclases</h3>
+                <br/>
+                <img class="fragment" src="media/8c.png" style="transform: scale(1.2); display: block; margin: auto;"/>
+            </section>
+            <section>
+                <h3>Pseudoclases</h3>
+                <br/>
+                <img class="fragment" src="media/9c.png" style="transform: scale(1.2); display: block; margin: auto;"/>
+            </section>
+            <section>
+                <h3>Pseudoclases</h3>
+                <br/>
+                <img class="fragment" src="media/10c.png" style="transform: scale(1.2); display: block; margin: auto;"/>
+            </section>
+            <section>
+                <h3>Pseudoelementos</h3>
+                <p>(Representan estados en algún momento dado o posición también)</p>
+                <br/>
+                <img class="fragment" src="media/11c.png" style="transform: scale(1.2); display: block; margin: auto;"/>
+            </section>
+            <section>
+                <h3>Atributos en Selectores</h3>
+                <br/>
+                <img class="fragment" src="media/12c.png" style="transform: scale(1.2); display: block; margin: auto;"/>
+            </section>
+            <section>
+                <h3>Box Model en CSS</h3>
+                <br/>
+                <img class="fragment" src="media/13c.png" style="transform: scale(1.7); display: block; margin: auto;"/>
+            </section>
+            <section>
+                <h4>Maneras de Integrar CSS en HTML (externo)</h4>
+                <br/>
+                <br/>
+                <img class="fragment" src="media/14c.png" style="transform: scale(1.75); display: block; margin: auto;"/>
+            </section>
+            <section>
+                <h4>Maneras de Integrar CSS en HTML (interno)</h4>
+                <br/>
+                <br/>
+                <img class="fragment" src="media/15c.png" style="transform: scale(1.75); display: block; margin: auto;"/>
+            </section>
+            <section>
+                <h4>Maneras de Integrar CSS en HTML (inline)</h4>
+                <br/>
+                <br/>
+                <img class="fragment" src="media/16c.png" style="transform: scale(1.1); display: block; margin: auto;"/>
+            </section>
+            <section>
+                <p style="font-size: 2em;">Media Query</p>
+                <p>Se refiere al Medio y características del Viewport (que es el polígono donde se renderizan finalmente los elementos HTML del documento)</p>
+                <ul class="fragment">
+                    <li>Printer (Impresora)</li>
+                    <li>Screen (Pantallas, más común)</li>
+                    <li>Speech (para sintetizadores de voz para casos de personas invidentes, por ejemplo)</li>
+                    <li>All (todos los medios disponibles y aplicables)</li>
+                </ul>
+            </section>
+            <section>
+                <p>normalmente se usa esta etiqueta Meta al principio del documento HTML, ayuda sobre todo al desarrollo de sitios <em>mobile friendly</em></p>
+                <pre class="hljs" style="display: block; overflow-x: auto; padding: 0.5em; background: rgb(34, 34, 34) none repeat scroll 0% 0%; color: rgb(255, 255, 255); font-size:1em;"><span class="hljs-tag" style="color: rgb(171, 135, 93);">&lt;<span class="hljs-name" style="color: rgb(155, 134, 155);">meta</span> <span class="hljs-attr">name</span>=<span class="hljs-string" style="color: rgb(143, 156, 108);">"viewport"</span> <span class="hljs-attr">
+content</span>=<span class="hljs-string" style="color: rgb(143, 156, 108);">"width=device-width, 
+initial-scale=1.0, 
+maximum-scale=1.0"</span>/&gt;</span></pre>
+            </section>
+            <section>
+                <h3>Especificidad en CSS</h3>
+                <p>Es un cálculo que se realiza para decidir qué regla CSS aplicar cuando los mismos elementos HTML están siendo señalados por varias reglas CSS en el documento. Y si las reglas en conflicto suman lo mismo: Se aplica la última en ser declarada.</p>
+            </section>
+            <section>
+                <img src="media/17c.png" style="transform: scale(1.1); display: block; margin: auto;"/>
+            </section>
+            <section>
+                <h1>Animaciones en CSS</h1>
+            </section>
+            <section>
+                <p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="XWXBJWa" data-user="nucliweb" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+                    <span>See the Pen <a href="https://codepen.io/nucliweb/pen/XWXBJWa">
+                    CSSAnimation: Logo Animation, multi animation</a> by Joan Leon (<a href="https://codepen.io/nucliweb">@nucliweb</a>)
+                    on <a href="https://codepen.io">CodePen</a>.</span>
+                  </p>
+                  <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+            </section>
+            <section data-background-image="media/18c.png">
+                <h3 style="background-color: rgba(0,0,0,0.5);">Herramientas en CSS</h3>
+                <h3 style="background-color: rgba(0,0,0,0.5);">Sitio: Code Beautify</h3>
+                <p style="background-color: rgba(0,0,0,0.5);">Es un sitio que tiene varias utilidades para la verificación de CSS incluso para hacer traducción (transpilación) desde y hacia dialectos como SCSS, LESS y SASS: https://codebeautify.org/css-tools</p>
+            </section>
+            <section data-background-image="media/19c.png">
+                <h3 style="background-color: rgba(0,0,0,0.5);">Sitio: Coolors</h3>
+                <p style="background-color: rgba(0,0,0,0.5);">Es un sitio con muchas utilidades para escoger paletas de colores personalizadas o en tendencia, siempre de manera armónica: https://coolors.co/palettes/trending</p>
+            </section>
+            <section data-background-image="media/20c.png">
+                <h3 style="background-color: rgba(0,0,0,0.5);">Sitio: Khroma</h3>
+                <p style="background-color: rgba(0,0,0,0.5);">Es un sitio que permite escoger paletas de colores haciendo uso de una IA: http://khroma.co/</p>
+            </section>
+            <section data-background-image="media/21c.png">
+                <h3 style="background-color: rgba(0,0,0,0.5);">Sitio: Free-CSS</h3>
+                <p style="background-color: rgba(0,0,0,0.5);">Es un sitio con templates de sitios y estilos CSS: https://www.free-css.com/</p>
+            </section>
+            <section data-background-image="media/bg5.jpg">
+                <h1>Javascript</h1>
+            </section>
+            <section>
+                <q>...es un lenguaje de programación ligero, interpretado, o compilado justo-a-tiempo (just-in-time) con funciones de primera clase... es un lenguaje de programación basada en prototipos, multiparadigma, de un solo hilo, dinámico, con soporte para programación orientada a objetos, imperativa y declarativa...</q>
+                <p style="font-size: medium; text-align: right;">-MDN Web Docs, Javascript, https://developer.mozilla.org/es/docs/Web/JavaScript</p>
+            </section>
+            <section>
+                <ul>
+                    <li class="fragment">Creado por Brendan Eich, Lanzado el 4 de diciembre de 1995.</li>
+                    <li class="fragment">Nombrado así por razones de marketing, no está directamente relacionado con el lenguaje de programación Java.</li>
+                    <li class="fragment">Fue creado para dar interactividad a las páginas web.</li>
+                </ul>
+            </section>
+            <section data-background-image="media/missmatch.jpg">
+                <h3 style="background-color: rgba(0,0,0,0.5);">Detalles acerca de Javascript</h3>
+                <ul style="background-color: rgba(0,0,0,0.5);">
+                    <li>Ha tenido bastantes problemas de compatibilidad entre navegadores, los cuales crean sus propios dialectos, con sus propios motores intérpretes.</li>
+                </ul>
+            </section>
+            <section data-background-image="media/bg6.jpg">
+                <img src="media/ecma.png" style="scale: 3; display: block; margin: auto; background-color: white;"/>
+                <br/>
+                <br/>
+                <br/>
+                <ul style="background-color: rgba(0,0,0,0.5);">
+                    <li>A fin de estandarizar Javascript (JS), en el ‘97 la European Computer Manufacturers Association (ECMA) propusieron una especificación de Javascript estándar el cual recibe el nombre de ECMAScript (ES) la cual ha sido desde entonces un referente de la versión “vanilla” de Javascript que usamos.</li>
+                </ul>
+            </section>
+            <section>
+                <h4 class="fragment">Por lo tanto:</h4>
+                <h4 class="fragment">Javascript es una implementación de ECMAScript</h4>
+            </section>
+            <section>
+                <p>A partir de la versión ES2015 se han implementado muchos cambios haciendolo incompatible con versiones anteriores</p>
+            </section>
+            <section data-background-image="media/babel.png">
+                <p style="background-color: rgba(0,0,0,0.8);">Una solución ha sido emplear un Transpiler llamado BABEL el cual traduce las características y sintaxis nuevas de ES2015 a versiones compatibles con el navegador en uso que no aún no implementan los nuevos estándares.</p>
+            </section>
+            <section data-background-image="media/babellogo.png">
+                <p style="background-color: rgba(0,0,0,0.8);">En resumen: podemos usar esta herramienta ampliamente conocida por la comunidad para emplear las versiones más nuevas de Javascript asegurando compatibilidad.</p>
+            </section>
+            <section>
+                <p>Consideramos que JS es un lenguaje de programación ya que cuenta con los siguientes elementos</p>
+                <ul>
+                    <li class="fragment">Conjunto de símbolos (palabras reservadas)</li>
+                    <li class="fragment">Sintaxis y reglas propias.</li>
+                    <li class="fragment">Hace uso de Variables y Vectores (o Arrays)</li>
+                    <li class="fragment">Funciones</li>
+                    <li class="fragment">Estructuras Condicionales</li>
+                    <li class="fragment">Bucles o ciclos de repetición</li>
+                </ul>
+            </section>
+            <section style="text-align: center; font-size: .9em;">
+                <p>Palabras Reservadas:</p>
+                <code>
+                <ul>
+                    <li>arguments</li>
+                    <li>await</li>
+                    <li>break</li>
+                    <li>case</li>
+                    <li>catch</li>
+                    <li>class</li>
+                    <li>const</li>
+                    <li>continue</li>
+                    <li>debugger</li>
+                    <li>default</li>
+                    <li>delete</li>
+                    <li>do</li>
+                </ul>
+                <ul>
+                    <li>else</li>
+                    <li>enum</li>
+                    <li>eval</li>
+                    <li>export</li>
+                    <li>extends</li>
+                    <li>false</li>
+                    <li>finally</li>
+                    <li>for</li>
+                    <li>function</li>
+                    <li>if</li>
+                    <li>implements</li>
+                    <li>import</li>
+                </ul>
+                <ul>
+                    <li>super</li>
+                    <li>switch</li>
+                    <li>this</li>
+                    <li>throw</li>
+                    <li>true</li>
+                    <li>try</li>
+                    <li>typeof</li>
+                    <li>var</li>
+                    <li>void</li>
+                    <li>while</li>
+                    <li>with</li>
+                    <li>yield</li>
+                </ul>
+                </code>
+            </section>
+            <section>
+                <p>Tipos de Datos Primitivos en JS:</p>
+                <code>
+                <ul>
+                    <li>undefined</li>
+                    <li>boolean</li>
+                    <li>number</li>
+                    <li>string</li>
+                    <li>bigint</li>
+                    <li>symbol</li>
+                    <li>object</li>
+                    <li>null (desciende de object)</li>
+                    <li>function</li>
+                </ul>
+                </code>
+            </section>
+            <section>
+                <h4 class="fragment">Operadores</h4>
+                <p class="fragment">Son algunas palabras o signos reservados que tienen una funcionalidad incorporada usados en sentencias Javascript</p>
+            </section>
+            <section>
+                <b>Aritméticos:</b>
+                <br/>
+                <ul>
+                    <li>Suma +</li>
+                    <li>Resta -</li>
+                    <li>División /</li>
+                    <li>Multiplicación *</li>
+                    <li>Módulo %</li>
+                    <li>Exponenciador **</li>
+                </ul>
+            </section>
+            <section>
+                <b>Lógicos/Binarios:</b>
+                <br/>
+                <ul>
+                    <li>&& AND</li>
+                    <li>|| OR</li>
+                </ul>
+            </section>
+            <section><b>Unarios:</b>
+                <code>
+                    <ul>
+                        <li>delete</li>
+                        <li>void</li>
+                        <li>typeof</li>
+                        <li>+ (convierte operando a 'number')</li>
+                        <li>! (NOT lógico)</li>
+                    </ul>
+                </code>
+            </section>
+            <section>
+                <b>Comentarios</b>
+                <p class="fragment">Son anotaciones dentro del código fuente que permiten entender el programa y lo que hace, sirve para los desarrolladores y no influye en nada al funcionamiento del programa final.</p>
+            </section>
+            <section>
+<pre class="hljs" style="display: block; overflow-x: auto; padding: 0.5em; background: rgb(39, 40, 34) none repeat scroll 0% 0%; color: rgb(221, 221, 221); font-size: 1.2em;"><span class="hljs-comment" style="color: rgb(117, 113, 94);">//comentario de una línea</span>
+sentencia 
+<span class="hljs-comment" style="color: rgb(117, 113, 94);">/* Comentario
+de 
+varias 
+líneas */</span></pre>
+            </section>
+            <section>
+                <b>Sentencias</b>
+                <p>Dentro de las ciencias de la computación: Un <em>programa</em> es una serie de <em>instrucciones</em> a ser ejecutadas por una computadora. En este contexto, cada <em>instrucción</em> es una <em>sentencia</em> (<em>statement</em>). En Javascript cada sentencia es separada por un punto y coma ( ; )</p>
+                <pre class="hljs" style="display: block; overflow-x: auto; padding: 0.5em; background: rgb(39, 40, 34) none repeat scroll 0% 0%; color: rgb(221, 221, 221); font-size: 1.1em;"><span class="hljs-keyword" style="color: rgb(249, 38, 114); font-weight: 700;">let</span> a,b,c ; <span class="hljs-comment" style="color: rgb(117, 113, 94);">// declaración de 3 variables</span>
+a = <span class="hljs-number">1</span>; <span class="hljs-comment" style="color: rgb(117, 113, 94);">// asignación de valor 1 a la variable a</span>
+b = “hello”; <span class="hljs-comment" style="color: rgb(117, 113, 94);">// asignación de valor “hello’ a la variable b</span>
+c = a; <span class="hljs-comment" style="color: rgb(117, 113, 94);">// asignación del valor de la variable a a la variable c</span></pre>
+            </section>
+            <section>
+                <b>Bloques</b>
+                <p class="fragment">Un Bloque es un conjunto de cero o más sentencias demilitado por un par de llaves {}. Hay varios tipos de bloques en Javascript, como lo son los de Control de Flujo, Iteraciones, Funciones y otros.</p>
+            </section>
+            <section>
+                <b>Control de Flujo:</b>
+                <b><code>if ... else</code></b>
+                <p>Permite ejecutar un bloque de sentencias si las condiciones a evaluar son verdaderas.</p>
+                <pre class="hljs" style="font-size: larger !important; display: block; overflow-x: auto; padding: 0.5em; background: rgb(35, 36, 31) none repeat scroll 0% 0%; color: rgb(248, 248, 242); font-size: 1.1em;"><span class="hljs-keyword" style="color: rgb(249, 38, 114);">if</span> (a &gt; <span class="hljs-number" style="color: rgb(174, 129, 255);">0</span>) {
+    result = <span class="hljs-string" style="color: rgb(230, 219, 116);">'positive'</span>;
+} <span class="hljs-keyword" style="color: rgb(249, 38, 114);">else</span> {
+    result = <span class="hljs-string" style="color: rgb(230, 219, 116);">'NOT positive'</span>;
+}</pre>
+            </section>
+            <section>
+                <b>Control de Flujo:</b>
+                <b><code>switch ... case</code></b>
+                <p class="fragment">Evalúa una expresión comparándola con los los valores en las sentencias case y al final teniendo una sentencia default que se usa normalmente para ejecutarse en caso de no tener ningún valor igual a ninguna sentencia case anterior.</p>
+            </section>
+            <section>
+                <b>Control de Flujo:</b>
+                <pre class="hljs" style="font-size: .7em !important; display: block; overflow-x: auto; background: rgb(23, 28, 25) none repeat scroll 0% 0%; color: rgb(135, 146, 138); padding: 0.5em; font-size: 1em;"><span class="hljs-keyword" style="color: rgb(85, 133, 155);">const</span> expresion = <span class="hljs-string" style="color: rgb(72, 153, 99);">'galletas'</span>;
+<span class="hljs-keyword" style="color: rgb(85, 133, 155);">switch</span> (expresion) {
+    <span class="hljs-keyword" style="color: rgb(85, 133, 155);">case</span> <span class="hljs-string" style="color: rgb(72, 153, 99);">'Pan Dulce'</span>:
+    <span class="hljs-built_in" style="color: rgb(159, 113, 60);">console</span>.log(<span class="hljs-string" style="color: rgb(72, 153, 99);">'No, es pan dulce'</span>);
+    <span class="hljs-keyword" style="color: rgb(85, 133, 155);">break</span>;
+    <span class="hljs-keyword" style="color: rgb(85, 133, 155);">case</span> <span class="hljs-string" style="color: rgb(72, 153, 99);">'Mangos'</span>:
+    <span class="hljs-built_in" style="color: rgb(159, 113, 60);">console</span>.log(<span class="hljs-string" style="color: rgb(72, 153, 99);">'No, son mangos'</span>);
+    <span class="hljs-keyword" style="color: rgb(85, 133, 155);">break</span>;
+    <span class="hljs-keyword" style="color: rgb(85, 133, 155);">case</span> <span class="hljs-string" style="color: rgb(72, 153, 99);">'galletas'</span>:
+    <span class="hljs-built_in" style="color: rgb(159, 113, 60);">console</span>.log(<span class="hljs-string" style="color: rgb(72, 153, 99);">'Sí, son galletas'</span>);
+    <span class="hljs-keyword" style="color: rgb(85, 133, 155);">break</span>;
+    <span class="hljs-keyword" style="color: rgb(85, 133, 155);">default</span>:
+    <span class="hljs-built_in" style="color: rgb(159, 113, 60);">console</span>.log(<span class="hljs-string" style="color: rgb(72, 153, 99);">`No era nada de lo anterior`</span>);
+}</pre>
+            </section>
+            <section>
+                <b>Iteración:</b>
+                <b><code>for</code></b>
+                <p class="fragment">Son sentencias que, permiten repetir un número indicado de veces un bloque evaluando una expresión.</p>
+            </section>
+            <section>
+                <b>Iteración:</b>
+                <pre class="hljs" style="display: block; overflow-x: auto; background: rgb(23, 28, 25) none repeat scroll 0% 0%; color: rgb(135, 146, 138); padding: 0.5em;"><span class="hljs-comment" style="color: rgb(120, 135, 125);">/* Crea un ciclo (o bucle) que consiste en 3 expresiones
+(opcionales) entre paréntesis seguido de una sentencia o un
+bloque de ellas.*/</span>
+<span class="hljs-keyword" style="color: rgb(85, 133, 155);">for</span> (<span class="hljs-keyword" style="color: rgb(85, 133, 155);">let</span> i=<span class="hljs-number" style="color: rgb(159, 113, 60);">0</span> ; i &lt; <span class="hljs-number" style="color: rgb(159, 113, 60);">5</span> ; i++ ) {
+    <span class="hljs-built_in" style="color: rgb(159, 113, 60);">console</span>.log("Hola, la variable i vale: "+i );
+}</pre>
+                <p>Resultado:</p>
+                <code style="font-size: .6em;">
+                    <p>Hola, la variable i vale: 0</p>
+                    <p>Hola, la variable i vale: 1</p>
+                    <p>Hola, la variable i vale: 2</p>
+                    <p>Hola, la variable i vale: 3</p>
+                    <p>Hola, la variable i vale: 4</p>
+                </code>
+            </section>
+            <section>
+                <b>Control de Flujo: </b>
+                <b><code> while</code></b>
+                <p>Crea un ciclo ejecutando el bloque o sentencia indicado mientras la condición a evaluar sea igual a true. La condición siempre es evaluada antes de empezar el bloque</p>
+            </section>
+            <section>
+                <b>Control de Flujo: </b>
+                <b><code> while</code></b>
+                <pre class="hljs" style="display: block; overflow-x: auto; background: rgb(23, 28, 25) none repeat scroll 0% 0%; color: rgb(135, 146, 138); padding: 0.5em; font-size: .8em;"><span class="hljs-keyword" style="color: rgb(85, 133, 155);">let</span> i = <span class="hljs-number" style="color: rgb(159, 113, 60);">0</span>;
+<span class="hljs-keyword" style="color: rgb(85, 133, 155);">while</span> (i &lt; <span class="hljs-number" style="color: rgb(159, 113, 60);">4</span>) {
+    <span class="hljs-built_in" style="color: rgb(159, 113, 60);">console</span>.log("i vale: "+i );
+    i++;
+}</pre>
+                <p>Resultado</p>
+                <code style="font-size: .6em;">
+                    <p>i vale: 0</p>
+                    <p>i vale: 1</p>
+                    <p>i vale: 2</p>
+                    <p>i vale: 3</p>
+                </code>
+            </section>
+            <section>
+                <b>Funciones:</b>
+                <p class="fragment">Toda función en Javascript es un objeto del tipo `function` que por cierto tiene las mismas propiedades de un Objeto Javascript (con mayúscula ya que JS es sensible a mayúsculas) se inicializan con la palabra reservada function.</p>
+            </section>
+            <section>
+                <b>Funciones:</b>
+                <pre class="hljs" style="display: block; overflow-x: auto; background: rgb(23, 28, 25) none repeat scroll 0% 0%; color: rgb(135, 146, 138); padding: 0.5em;"><span class="hljs-function"><span class="hljs-keyword" style="color: rgb(85, 133, 155);">function</span> <span class="hljs-title" style="color: rgb(71, 140, 144);">miPrimeraFuncion</span>(<span class="hljs-params" style="color: rgb(159, 113, 60);">arg1, arg2</span>)
+</span>{
+    <span class="hljs-comment" style="color: rgb(120, 135, 125);">//varias sentencias...</span>
+    <span class="hljs-keyword" style="color: rgb(85, 133, 155);">return</span> arg1 + arg2;
+}</pre>
+            </section>
+            <section>
+                <b>Expresión de Función:</b>
+                <p class="fragment">Es una manera de declarar y asignar al mismo tiempo una función a una variable, si se omite el nombre se convierte en una "función anónima"</p>
+            </section>
+            <section>
+                <b>Expresión de Función:</b>
+                <pre class="hljs" style="display: block; overflow-x: auto; background: rgb(23, 28, 25) none repeat scroll 0% 0%; color: rgb(135, 146, 138); padding: 0.5em; font-size: .6em;"><span class="hljs-keyword" style="color: rgb(85, 133, 155);">let</span> miFuncion = () =&gt; {
+<span class="hljs-built_in" style="color: rgb(159, 113, 60);">console</span>.log(“hola, soy una expresión de función flecha 
+anónima”);}</pre>
+            </section>
+            <section>
+                <b>Expresión de Función e Invocación Imnmediata:</b>
+            <pre class="hljs" style="display: block; overflow-x: auto; background: rgb(23, 28, 25) none repeat scroll 0% 0%; color: rgb(135, 146, 138); padding: 0.5em; font-size: .6em;">(() =&gt; {<span class="hljs-built_in" style="color: rgb(159, 113, 60);">console</span>.log(<span class="hljs-string" style="color: rgb(72, 153, 99);">'¡Me inicié inmediatamente!'</span>)})();</pre>
+            </section>
+            <section>
+                <b>Variables:</b>
+                <p class="fragment">Las variables son espacios de memoria que reservamos para guardar valores (datos) del tipo que sea mientras el programa es ejecutado. A la creación de variables en tu programa se le llama: 'declarar' una variable. Palabras reservadas para declarar una variable en Javascript:</p>
+                <ul class="fragment">
+                    <li>var</li>
+                    <li>let</li>
+                    <li>const</li>
+                </ul>
+            </section>
+            <section>
+                <p><b>Comparación<code> var, let , const</code></b></p>
+                <table>
+                    <thead>
+                        <td></td>
+                        <td>var</td>
+                        <td>let</td>
+                        <td>const</td>
+                    </thead>
+                    <tr>
+                        <td>Redeclarable</td>
+                        <td>✅</td>
+                        <td>❌</td>
+                        <td>❌</td>
+                    </tr>
+                    <tr>
+                        <td>Reasignable</td>
+                        <td>✅</td>
+                        <td>✅</td>
+                        <td>❌</td>
+                    </tr>
+                    <tr>
+                        <td>Global</td>
+                        <td>✅</td>
+                        <td>❌</td>
+                        <td>❌</td>
+                    </tr>
+                    <tr>
+                        <td>Bloque</td>
+                        <td>❌</td>
+                        <td>✅</td>
+                        <td>✅</td>
+                    </tr>
+                    <tr>
+                        <td>Hoisted</td>
+                        <td>✅</td>
+                        <td>❌</td>
+                        <td>❌</td>
+                    </tr>
+                </table>
+                <p style="font-size: medium; text-align: right;">Fuente: Nikita Hlopov's Frontend Dev Blog, 06/Oct/2021, Difference between var vs let vs const in JavaScript, Enlace: https://nikitahl.com/var-vs-let-vs-const
+                    </p>
+            </section>
+            <section>
+                <h1 class="fragment">POO en Javascript</h1>
+            </section>
+            <section>
+                <p class="fragment">Como Javascript es un lenguaje Basado en Prototipos y Orientado a Objetos la manera en que se implementa es la siguiente partiendo de estos principios de la Programación Orientada a Objetos:</p>
+                <ul class="fragment">
+                    <li>Todos los Objetos provienen de una Clase de Objeto.</li>
+                    <li>Una Clase es como el "plano" o "plantilla" de lo que será un Objeto.</li>
+                    <li>Tienen las siguientes características: Herencia, Abstracción, Encapsulamiento, Polimorfismo, Garbage Collection.</li>
+                    <li>La palabra reservada para crear Objetos en Javascript es 'class'.</li>
+                </ul>
+            </section>
+            <section>
+                <pre class="hljs" style="display: block; overflow-x: auto; background: rgb(23, 28, 25) none repeat scroll 0% 0%; color: rgb(135, 146, 138); padding: 0.5em; font-size: 1em;"><span class="hljs-class"><span class="hljs-keyword" style="color: rgb(85, 133, 155);">class</span> <span class="hljs-title" style="color: rgb(71, 140, 144);">Cuadro</span> <span class="hljs-keyword" style="color: rgb(85, 133, 155);">extends</span> <span class="hljs-title" style="color: rgb(71, 140, 144);">Poligono</span> </span>{
+    <span class="hljs-keyword" style="color: rgb(85, 133, 155);">constructor</span>(largo) {
+        <span class="hljs-keyword" style="color: rgb(85, 133, 155);">super</span>(largo);
+        <span class="hljs-keyword" style="color: rgb(85, 133, 155);">this</span>.name = <span class="hljs-string" style="color: rgb(72, 153, 99);">'Cuadro'</span>;
+    }
+}</pre>
+            </section>
+            <section>
+                <h1>Arreglos</h1>
+            </section>
+            <section>
+                <p>Un Arreglo (o Array) no es más que una lista de objetos o variables ordenada por su índice (orden actual) la cual tiene métodos para iterarla y realizar mutaciones en ella, puede cambiar de tamaño (número de elementos) y pueden ser elementos de cualquier tipo.</p>
+            </section>
+            <section>
+                <pre class="hljs" style="display: block; overflow-x: auto; background: rgb(23, 28, 25) none repeat scroll 0% 0%; color: rgb(135, 146, 138); padding: 0.5em; font-size: 1em;"><span class="hljs-keyword" style="color: rgb(85, 133, 155);">let</span> unArreglo = [“hola”, <span class="hljs-number" style="color: rgb(159, 113, 60);">1</span>, <span class="hljs-number" style="color: rgb(159, 113, 60);">-99</span>, 
+(n) =&gt; {<span class="hljs-keyword" style="color: rgb(85, 133, 155);">return</span> <span class="hljs-number" style="color: rgb(159, 113, 60);">0</span>;}, [<span class="hljs-number" style="color: rgb(159, 113, 60);">1</span>,<span class="hljs-number" style="color: rgb(159, 113, 60);">2</span>] ] ;</pre>
+            </section>
+            <section>
+                <h1>FIN</h1>
+                <a href="bases.html">Inicio</a>
+                <br/>
+                <a href="index.html">Índice</a>
+            </section>
+		</div>
+	</div>
+	<!-- slides -->
+	<!-- Configuration and modules -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.2.1/reveal.min.js" integrity="sha512-/wlhXEDdbvt3WbfQwgZ4hRehxquuDDLja5DV0lyoW+5kSVaCaQV9EAEU6AmpAkXd+S5yV78TJK/+YqR0uy8h4Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.2.1/plugin/notes/notes.min.js" integrity="sha512-v2co+5nr0bgHekutTzF5jAB0UAjM95dpCF7VVw7WsFCjfxonbQo8Vwl487tNYl0iHWHHGV4o5xKBp5ifyhJkWg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.2.1/plugin/markdown/markdown.min.js" integrity="sha512-KSOrBsj0WKbq6xcEboor7XHEq+QQNVWXJ4IFXC/k7aR8ZATkUPA01ERRFMtkkApsGs71JpygBvs3eRNLammVoA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.2.1/plugin/highlight/highlight.min.js" integrity="sha512-U3fPDUX5bMrn1wnYqjaK44MFA9E6MKS+zPAg9WPAGF5XhReBeDj3FGaA831CjueG+YJxYA3WaO/m33kMIoOs/A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+				center: true,
+				slideNumber: true,
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+			});
+		</script>
+	</body>
+</html>
