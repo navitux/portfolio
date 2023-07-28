@@ -48,19 +48,6 @@ header a, footer a{
     font-size: 18px;
 }
 
-.card-button {
-    border: none;
-    outline: 0;
-    display: inline-block;
-    padding: 8px;
-    color: white;
-    background-color: #000;
-    text-align: center;
-    cursor: pointer;
-    width: 100%;
-    font-size: 18px;
-}
-
 .card-icon{
     height: 1.5em;
     width: auto;
