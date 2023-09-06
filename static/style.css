@@ -16,23 +16,7 @@ header a, footer a{
  color: white;
  text-decoration: underline;
 }
-/* CV styles */
-#cv_img{
- display: none;
-}
-#center_wrapper{
- display: flex;
- align-items: center;
- justify-content: center;
-}
-@media (max-width: 899px){
- #cv_iframe{
-  display: none !important;
- }
- #cv_img {
-  display: block;
- }
-}
+
 
 /* contact card */
 .card {
