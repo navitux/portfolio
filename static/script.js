@@ -1,3 +1,5 @@
+/*
+OLD FETCH SCRIPT FROM PLUME BLOG
 // feeding Plume articles
 // gist: https://gist.github.com/navitux/2474ea39f2cf4106c2a9dd46f2dcd052
 var plume_feed = document.getElementById("plume_feed");
@@ -34,9 +36,20 @@ parser.parseURL(URL_corsproxy, function(err, feed) {
     content.innerHTML = entry.content.replace("]]>", "").split(" ")
     .splice(0,19).join(" ")+" ...";
   })
-})
+}) 
+*/
 
-// CV image zoom:
+// blog markdown rendering
+const md = window.markdownit({
+  html: true
+});
+fetch("../README.txt")
+  .then((res) => res.text())
+  .then((text) => {
+    document.getElementById("mdblog").innerHTML = md.render(text);
+  });
+
+// image zoom:
 mediumZoom('[data-zoomable]',{
  background: '#000a',
  scrollOffset: 0,

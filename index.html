@@ -3,7 +3,7 @@
 <!-- the main language for my content will be Spanish, but I'll provide an English version -->
 <head>
  <meta charset="UTF-8">
- <title>welcome to my website</title>
+ <title>Ivan</title>
  <!-- SEO stuff -->
  <meta name="title" content="Ivan Robles Website and Portfolio">
  <meta name="description" content="Website about me, Ivan Robles: 
@@ -15,121 +15,116 @@
  <meta name="revisit-after" content="1 days">
  <meta name="author" content="Ivan Robles">
  <!-- functional and style section -->
- <link rel="icon" href="static/2d-cartoon.jpg">
  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <link rel="icon" href="static/favicon.svg"/>
  <link rel="stylesheet" href="static/style.css">
  <script src="static/alpinejs3.10.3.min.js"></script>
- <script src="static/rss-parser3.7.6.min.js"></script>
- <!-- zoom -->
  <script src="static/medium-zoom.1.0.8.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 </head>
-<body>
- <header>
-  <h1>Welcome to Ivan Website &#127881;</h1>
+
+
+<body class="animate__animated animate__fadeIn">
+
+ <header class="animate__animated animate__fadeInDown">
+  <h1>&#127881; Welcome &#127881;</h1>
   <small>This space is my personal website and portfolio where I share what I'm doing and what I am doing</small>
  </header>
- <!-- I use hr tags to separate parts in my website -->
-
- <br>
- 
  <main>
-  <noscript>
-   <div id="warning" style="background-color:red; color:white;">
-    <p>If you are seeing this, your browser has blocked Javascript from running. This web page requires Javascript to display:</p>
-    <ul>
-     <li>The news from my blog:
-      <a target="_blank" rel="noopener"
-      href="https://plume.otakufarms.com/@/ivantux"
-      style="color: white; text-decoration: underline;">Plume</a></li>
-     <li>In the case of apps, they usually need Javascript to work</li>
-    </ul>
-   </div>
-  </noscript>
 
   <br>
 
-  <section id="contact">
+  <section id="contact" class="animate__animated animate__fadeInDown">
    <article id="contact_card" class="card">
-    <img data-zoomable src="https://images2.imgbox.com/2f/04/1GBBBKff_o.png" alt="Hello!! I'm:" style="width:80%; border-radius:50%">
+    <img data-zoomable src="https://images2.imgbox.com/2f/04/1GBBBKff_o.png" alt="Hello!! I'm:" style="width:80%; border-radius:50%" loading="lazy">
     <h1>Ivan Robles</h1>
     <p>Linux Sysadmin & Software Dev</p>
     <!-- matrix -->
-    <a target="_blank" rel="noopener" href="https://matrix.to/#/@navitux:matrix.org">
+    <a target="_blank" rel="noopener" rel="nofollow" href="https://matrix.to/#/@navitux:matrix.org">
     &#128488;&#65039; [matrix] chat</a>
     <br>
     <!-- email -->
-    <a class="card-icon" target="_blank" rel="noopener" rel="nofollow" href="mailto:navitux@disroot.org">
+    <a target="_blank" rel="noopener" rel="nofollow" href="mailto:navitux@disroot.org">
     &#128231; navitux@disroot.org</a>
    </article>
   </section>
 
   <br>
 
-  <section id="blog">
-   <h2>My Blog</h2>
-
-   <article id="plume">
-    <h3>
-    <a target="_blank" rel="noopener" 
-    href="https://plume.otakufarms.com/@/ivantux">
-    Plume Blog</a></h3>
-    <div id="plume_feed"></div>
-   </article>
-
+  <section id="blog" class="animate__animated animate__fadeInDown">
+   <h3>Blog</h3>
+   <article id="mdblog"></article>
+   <noscript>
+    <p>(if you're seeing this is because Javascript has been disabled)</p>
+   <iframe src="README.txt" style="background-color: lightsteelblue;" width="580px"></iframe>
+   <br>
+   <a href="README.txt">Cannot see the Blog? Click Here</a>
+   </noscript>
   </section>
 
   <br>
 
-  <section id="projects">
-    <h3>Proyectos:</h3>
-    <a target="_blank" rel="noopener"
-    href="projects/taller-programacion-web/index.html">
-     Front End web Programming Workshop
-    </a>
-  </section>
-
-  <br>
-
-  <section id="resume">
-   <h3>Mi <abbr title="Currículum Vitae">CV</abbr></h3>
-   <embed src="static/Ivan-Robles-CV-EN.pdf"
-        style="width:85%; height:600px; display: block; margin-left: auto; margin-right: auto;"/>
-  </section>
-
-  <br>
-
-  <section id="about">
-    <h2>About me</h2>
-    <p>This is my personal website in github pages with mirror in neocities, here I share what I have published in my blog, my projects, my CV, my social networks and contact.</p>
+  <section id="projects" class="animate__animated animate__fadeInDown">
+    <h3>Projects:</h3>
     <ul>
-     <li>I am a Protestant Christian</li>
-     <li>I believe in the universal human rights</li>
-     <li>Open to work !!</li>
-     <li>I like Linux a lot</li>
-     <li>I really like free and open source software</li>
-     <li>I like open hardware projects (although it is still new to me)</li>
-     <li>I like data science</li>
-     <li>Decentralized networks and peer-to-peer</li>
-     <li>Mathematics</li>
-     <li>Communication Sciences</li>
-     <li>Quantum Computing</li>
+      <li>
+        <a target="_blank" rel="noopener" href="projects/taller-programacion-web/index.html">Front End web Programming Workshop</a>
+      </li>
+      <li>
+        <a target="_blank" rel="noopener" href="https://notabug.org/robinslave/portfolio">This very website</a>
+      </li>
     </ul>
+  </section>
+
+  <br>
+
+  <section id="resume" class="animate__animated animate__fadeInDown">
+   <details>
+    <summary>
+      <h3>My Resume</h3>
+    </summary>
+    <embed src="static/Ivan-Robles-CV-EN.pdf" style="width:85%; height:600px; display: block; margin-left: auto; margin-right: auto;"/>
+   </details>
+  </section>
+
+  <br>
+
+  <section id="about" class="animate__animated animate__fadeInDown">
+   <details>
+    <summary>
+      <h3>About me</h3>
+    </summary>
+    <ul>
+     <li>I am a Protestant Christian &#10013;&#65039;</li>
+     <li>I believe in the universal human rights &#128330;&#65039;</li>
+     <li>Actively looking for a job &#128188;</li>
+     <li>I &#10084;&#65039; Linux &#128039; &#128187;</li>
+     <li>I &#10084;&#65039; open source software &#129489;&#8205;&#128187; &#129309;</li>
+     <li>I &#10084;&#65039; open hardware &#129302; &#128223;</li>
+     <li>I &#10084;&#65039; data science & math &#128200; &#128104;&#8205;&#128300;</li>
+     <li>I &#10084;&#65039; Fediverse &#128101; &#127760;</li>
+     <li>I &#10084;&#65039; quantum computing &#9883;&#65039;</li>
+     <li>I &#10084;&#65039; comics/mangas &#128165; &#128218;</li>
+     <li>I &#10084;&#65039; wholesome memes &#128526; &#128076; (｡◕‿‿◕｡)</li>
+     <li>I &#10084;&#65039; memes &#129397; &#128076; </li>
+     <li>I &#10084;&#65039; animation films (ﾉ◕ヮ◕)ﾉ*:・ﾟ✧</li>
+    </ul>
+    </details>
    </section>
 
   <br>
 
  </main>
  <footer>
-  <small>
    <p>This page uses: 
-    <a href="https://rilwis.github.io/bamboo/">Bamboo CSS</a>, 
-    <a href="https://alpinejs.dev/">Alpinejs</a>,
-    <a href="https://github.com/rbren/rss-parser">RSS Parser</a>,
-    <a href="https://medium-zoom.francoischalifour.com/">Medium Zoom</a>
+    <a target="_blank" rel="noopener" href="https://rilwis.github.io/bamboo/">Bamboo CSS</a>,
+    <a target="_blank" rel="noopener" href="https://alpinejs.dev/">Alpinejs</a>,
+    <a target="_blank" rel="noopener" href="https://medium-zoom.francoischalifour.com/">Medium Zoom</a>,
+    <a target="_blank" rel="noopener" href="https://markdown-it.github.io/">markdown-it.js</a>
    </p>
     <p>Ivan Robles <span x-text="new Date().getFullYear()"></span> copyleft</p>
-  </small>
  </footer>
+ <script src="https://cdn.jsdelivr.net/npm/markdown-it@13.0.2/dist/markdown-it.min.js"></script>
  <script src="static/script.js"></script>
 </body>
 </html>

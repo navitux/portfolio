@@ -1,8 +1,8 @@
 @import url('bamboo.css');
-*{
+* {
     font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
-header,footer{
+header,footer {
  color:white;
  text-align: center;
  background: #4568DC;
@@ -12,12 +12,60 @@ header,footer{
  background: linear-gradient(to left, #B06AB3, #4568DC);
  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
+footer {
+    font-size: x-small;
+}
 header a, footer a{
  color: white;
  text-decoration: underline;
 }
-
-
+/* hidding arrow in summary elements */
+details > summary {
+    list-style: none;
+    transition: margin 150ms ease-out;
+  }
+details summary::-webkit-details-marker {
+    display:none;
+  }
+/* hidding arrow in summary elements */
+/* animations */
+details[open] summary ~ * {
+    animation: sweep 1s ease-in-out;
+  }
+  
+  @keyframes sweep {
+    0%    {opacity: 0; transform: translateX(-10px)}
+    100%  {opacity: 1; transform: translateX(0)}
+  }
+/* animations */
+summary {
+    /* this will stroke text in black */
+    color: white !important;
+    text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000 !important;
+    margin: 0% !important;
+    padding: 1%;
+}
+summary + p {
+    /* margin: 1%; */
+    text-align: justify;
+}
+summary + a {
+    margin: 1%;
+    text-align: justify;
+}
+details > p {
+    padding: 0.5%;
+}
+details > a {
+    padding: 0.5%;
+}
+embed {
+    background-color: white;
+}
 /* contact card */
 .card {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -27,13 +75,18 @@ header a, footer a{
     font-family: arial;
 }
 
-.card-title {
-    color: grey;
-    font-size: 18px;
+/* blog section */
+#blog1 {
+    background-image: url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwallpaperaccess.com%2Ffull%2F2033952.jpg&f=1&nofb=1&ipt=7d851c502d1700b0db587b20267d502b4e68078fa72d318e76ef069c4e3f4da9&ipo=images");
+    background-size: cover;
 }
 
-.card-icon{
-    height: 1.5em;
-    width: auto;
-    margin: 0.5em;
+#blog2 {
+    background-image: url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%3Fid%3DOIP.tyUV66TZq4h0Jpfh-6f3LwHaE7%26pid%3DApi&f=1&ipt=3c21dfcefc3ae6d6990ff1767edcf4007414c68a89e781272529a2d735fce5c3&ipo=images");
+    background-size: cover;
+}
+
+#blog3 {
+    background-image: url("https://technofaq.org/wp-content/uploads/2019/10/learn-3653430_1920-600x339.jpg");
+    background-size: cover;
 }
