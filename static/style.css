@@ -21,11 +21,11 @@ header a, footer a{
 }
 /* hidding arrow in summary elements */
 details > summary {
-    list-style: none;
+    list-style: none !important;
     transition: margin 150ms ease-out;
   }
 details summary::-webkit-details-marker {
-    display:none;
+    display:none !important;
   }
 /* hidding arrow in summary elements */
 /* animations */
