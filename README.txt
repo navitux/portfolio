@@ -42,7 +42,7 @@ As freelance job, social service and in collaboration with esposible.org organiz
 
 [Web Programming Course (Spanish) - Design Principles 6/7](https://video.hardlimit.com/w/oWsSunKAaUr9nvzDHmqjHT)
 
-[Web Programming Course (Spanish) - Frameworks 7/7 Final](https://video.hardlimit.com/w/xgbmpAi1fPUark9Tduvd6R)
+[Web Programming Course (Spanish) - Frameworks Final 7/7](https://video.hardlimit.com/w/xgbmpAi1fPUark9Tduvd6R)
 
 Youtube reproduction list:
 
