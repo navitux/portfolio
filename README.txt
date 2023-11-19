@@ -6,6 +6,8 @@ Hi, this is the README, of my portfolio (https://navitux.neocities.org), not muc
 
 CHANGELOG
 
+c196f69 README.gmi moved to README.txt (since neocities.org is rejecting it)
+c8d8ce5 README file renamed as README.gmi
 5b73dad Several changes: the README file now has just gopher and plain text content (not Markdown), blog.html file added instead of old README.txt
 e67d80e projects/ directory removed for future tracking of individual apps there
 43543f9 icon changed
