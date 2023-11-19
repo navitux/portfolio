@@ -6,7 +6,7 @@ Hi, this is the README, of my portfolio (https://navitux.neocities.org), not muc
 
 CHANGELOG
 
-5b73dad (HEAD -> main, origin/main, origin/HEAD, github/main) Several changes: the README file now has just gopher and plain text content (not Markdown), blog.html file added instead of old README.txt
+5b73dad Several changes: the README file now has just gopher and plain text content (not Markdown), blog.html file added instead of old README.txt
 e67d80e projects/ directory removed for future tracking of individual apps there
 43543f9 icon changed
 ebacf74 Resume Updated
