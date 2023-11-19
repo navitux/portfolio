@@ -39,16 +39,6 @@ parser.parseURL(URL_corsproxy, function(err, feed) {
 }) 
 */
 
-// blog markdown rendering
-const md = window.markdownit({
-  html: true
-});
-fetch("../README.txt")
-  .then((res) => res.text())
-  .then((text) => {
-    document.getElementById("mdblog").innerHTML = md.render(text);
-  });
-
 // image zoom:
 mediumZoom('[data-zoomable]',{
  background: '#000a',
